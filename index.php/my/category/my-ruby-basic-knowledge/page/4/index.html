@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="my-MM" class="no-js">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="../../../../../../xmlrpc.html">
+	<!--[if lt IE 9]>
+	<script src="http://ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]-->
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Rubyရဲ့‌ အခြေခံအချက်‌တွေ &#8211; စာမျက်နှာ 4  &#8211; Learning Site For Ruby</title>
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Learning Site For Ruby &raquo;  ပေးပို့ချက်" href="../../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Learning Site For Ruby &raquo;  မှတ်ချက်များ ပေးပို့မှု " href="../../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Learning Site For Ruby &raquo;  Rubyရဲ့‌ အခြေခံအချက်‌တွေ ကဏ္ဍ ပေးပို့မှု " href="../../feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../../../../../../wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='../../../../../../wp-includes/css/dist/block-library/theme.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='codemirror-css'  href='../../../../../../wp-content/plugins/wp-codemirror-block/vendor/codemirror/lib/codemirror.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='codemirror-blocks--css'  href='../../../../../../wp-content/plugins/wp-codemirror-block/assets/blocks/blocks.style.build.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='../../../../../../wp-content/themes/twentyfifteen/genericons/genericons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css'  href='../../../../../../wp-content/themes/twentyfifteen/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-block-style-css'  href='../../../../../../wp-content/themes/twentyfifteen/css/blocks.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='http://ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com/wp-content/themes/twentyfifteen/css/ie.css' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='http://ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com/wp-content/themes/twentyfifteen/css/ie7.css' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='../../../../../../wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='../../../../../../wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var whp_local_data = {"add_url":"http:\/\/ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com\/wp-admin\/post-new.php?post_type=event","ajaxurl":"http:\/\/ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../../../../wp-content/plugins/wp-security-hardening/modules/js/front.js'></script>
+<link rel='https://api.w.org/' href='../../../../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../../../xmlrpc0db0.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../../../wp-includes/wlwmanifest.xml" /> 
+
+<style>/* CSS added by WP Meta and Date Remover*/.entry-meta {display:none !important;}
+	.home .entry-meta { display: none; }
+	.entry-footer {display:none !important;}
+	.home .entry-footer { display: none; }</style></head>
+
+<body class="archive paged category category-my-ruby-basic-knowledge category-7 wp-embed-responsive paged-4 category-paged-4">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">စာကိုယ်ပိုင်းသို့ သွားရန်</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+										<p class="site-title"><a href="../../../../index.html" rel="home">Learning Site For Ruby</a></p>
+										<button class="secondary-toggle">မီနူးနှင့် ဝစ်ဂျက်များ</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+			<div id="secondary" class="secondary">
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+				<div class="menu-%e1%80%99%e1%80%ac%e1%80%90%e1%80%ad%e1%80%80%e1%80%ac-container"><ul id="menu-%e1%80%99%e1%80%ac%e1%80%90%e1%80%ad%e1%80%80%e1%80%ac" class="nav-menu"><li id="menu-item-113-ja" class="lang-item lang-item-2 lang-item-ja lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-113-ja"><a href="../../../../../category/ruby-basic-knowledge/index.html" hreflang="ja" lang="ja"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAE2SURBVHjaYvz69SsDEvj37x+ERGbAwZ9//wACiAUoysXFBST///8P0QOm//+HU0jgxYsXAAHEAlP0H8HYt+//4SP/f//6b2b238sLrpqRkRFoCUAAsaCrXrv2/8KF///8+f/r9//Dh/8/ffI/OQWiAeJCgABigrseJPT27f/Vq////v3/1y8oWrzk/+PHcEv+/PkDEEBMEM/B3fj/40eo0t9g8suX/w8f/odZAVQMEEAsQAzj/2cQFf3PxARWCrYEaBXQLCkpqB/+/wcqBgggJrjxQPX/hYX/+/v///kLqhpIBgf/l5ODhxiQBAggFriToDoTEv5zcf3ftQuk2s7uf0wM3MdAAPQDQAAxvn37lo+PDy4KZUDcycj4/z9CBojv3r0LEEAgG969eweLSBDEBSCWAAQYACaTbJ/kuok9AAAAAElFTkSuQmCC" title="日本語" alt="日本語" width="16" height="11" /><span style="margin-left:0.3em;">日本語</span></a></li>
+<li id="menu-item-113-my" class="lang-item lang-item-5 lang-item-my current-lang menu-item menu-item-type-custom menu-item-object-custom menu-item-113-my"><a href="../../index.html" hreflang="my-MM" lang="my-MM"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAHwAAAB8B1b+odAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADuSURBVCiRpZKxSsNgFIW/xFAKgUhE0jlDEunUxUIm8TVcXF07dRH+N0hXn8A3yOLmJnTp0qEJbZbiUCo0EnFJfx0KhfInzZALdzn33MM93KPJKX+0KL3NcrOAeXvoM2W8/V7VDr3eAwDpdlkv8LxzT5csn+AyAGDYewTg4ysHYJEvSL+TE75iIStW+JaHGAjsjo3dsREDgW95ZMVKuUARKGVJNI+I1/ERi9cx0TyilKVqYfxqVHoL+y67LAENwr1LHc+4m6mP0J1ruu8zfiYvAJijJ+4/HeRmq3C1zU2oBulCh71sxqjLQQWxEgP+AbHjRVlKrWgfAAAAAElFTkSuQmCC" title="မြန်မာဘာသာ" alt="မြန်မာဘာသာ" width="16" height="11" /><span style="margin-left:0.3em;">မြန်မာဘာသာ</span></a></li>
+<li id="menu-item-120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-120"><a>　　　　　　မာတိကာ</a></li>
+<li id="menu-item-300" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-has-children menu-item-300"><a href="../../index.html" aria-current="page">Rubyရဲ့‌ အခြေခံအချက်‌တွေ</a>
+<ul class="sub-menu">
+	<li id="menu-item-298" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-298"><a href="../../../../2020/07/07/my-introduction/index.html">မိတ်ဆက်</a></li>
+	<li id="menu-item-2219" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2219"><a href="../../my-variable/index.html">Variable</a>
+	<ul class="sub-menu">
+		<li id="menu-item-367" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-367"><a href="../../../../2020/07/08/my-local-variable-2/index.html">Local Variable</a></li>
+		<li id="menu-item-364" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-364"><a href="../../../../2020/07/08/my-constant/index.html">Constant</a></li>
+		<li id="menu-item-401" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-401"><a href="../../../../2020/07/08/my-global-variable/index.html">Global Variable​</a></li>
+		<li id="menu-item-405" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-405"><a href="../../../../2020/07/09/my-block-variable/index.html">Block Variable</a></li>
+	</ul>
+</li>
+	<li id="menu-item-466" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-466"><a href="../../my-string/index.html">String</a>
+	<ul class="sub-menu">
+		<li id="menu-item-465" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-465"><a href="../../../../2020/07/09/my-string-definition/index.html">Defining String</a></li>
+		<li id="menu-item-505" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-505"><a href="../../../../2020/07/10/my-string-format/index.html">String Format</a></li>
+		<li id="menu-item-506" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-506"><a href="../../../../2020/07/10/my-string-single-dobule-qoute/index.html">Difference Between Single Quote and Double Quote</a></li>
+		<li id="menu-item-530" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-530"><a href="../../../../2020/07/13/my-string-interpolation/index.html">Interpolation</a></li>
+		<li id="menu-item-533" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-533"><a href="../../../../2020/07/13/my-string-compare/index.html">String Comparison</a></li>
+		<li id="menu-item-621" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-621"><a href="../../../../2020/07/27/my-heredoc/index.html">Here Document</a></li>
+		<li id="menu-item-625" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-625"><a href="../../../../2020/07/27/my-change-to-string/index.html">String Conversion</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2226" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2226"><a href="../../my-number/index.html">Number</a>
+	<ul class="sub-menu">
+		<li id="menu-item-642" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-642"><a href="../../../../2020/07/27/my-num-operator/index.html">Number and Operator</a></li>
+		<li id="menu-item-753" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-753"><a href="../../../../2020/07/28/my-numdiv-checkpoint/index.html">Number တွေကိုစားတဲ့အခါ သတိထားရမယ့်အချက်</a></li>
+		<li id="menu-item-771" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-771"><a href="../../../../2020/07/28/my-change-to-num/index.html">Number Conversions</a></li>
+	</ul>
+</li>
+	<li id="menu-item-794" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-794"><a href="../../my-conditional-branch/index.html">Boolean and Condition</a>
+	<ul class="sub-menu">
+		<li id="menu-item-796" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-796"><a href="../../../../2020/07/28/my-boolean/index.html">Ruby Boolean</a></li>
+		<li id="menu-item-797" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-797"><a href="../../../../2020/07/28/my-if-statement/index.html">If Statement</a></li>
+		<li id="menu-item-825" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-825"><a href="../../../../2020/07/30/my-unless/index.html">Unless Statement</a></li>
+		<li id="menu-item-824" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-824"><a href="../../../../2020/07/30/my-case/index.html">Case Statement</a></li>
+		<li id="menu-item-823" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-823"><a href="../../../../2020/07/30/my-ternary-operator/index.html">Conditional Operator</a></li>
+	</ul>
+</li>
+	<li id="menu-item-891" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-891"><a href="../../my-method/index.html">Method</a>
+	<ul class="sub-menu">
+		<li id="menu-item-890" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-890"><a href="../../../../2020/08/04/my-method/index.html">Ruby Method</a></li>
+		<li id="menu-item-964" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-964"><a href="../../../../2020/08/06/my-method-end-in/index.html">Method Name ရဲ့ Question Mark​(?) နဲ့ Exclamation Mark(!)</a></li>
+		<li id="menu-item-965" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-965"><a href="../../../../2020/08/06/my-method-eql/index.html">ညီမညီစစ်တဲ့ Method များ</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-998" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-998"><a href="../../../my-array/index.html">Array</a>
+<ul class="sub-menu">
+	<li id="menu-item-999" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-999"><a href="../../../../2020/08/06/my-array/index.html">Array အကြောင်း</a></li>
+	<li id="menu-item-1063" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1063"><a href="../../../../2020/09/03/my-looping/index.html">Looping</a></li>
+	<li id="menu-item-1062" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1062"><a href="../../../../2020/09/03/my-range/index.html">Range</a></li>
+</ul>
+</li>
+<li id="menu-item-1108" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1108"><a href="../../../my-hash/index.html">Hash</a>
+<ul class="sub-menu">
+	<li id="menu-item-1109" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1109"><a href="../../../../2020/09/28/my-hash/index.html">Hash အကြောင်း</a></li>
+</ul>
+</li>
+<li id="menu-item-1184" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1184"><a href="../../../my-symbol/index.html">Symbol</a>
+<ul class="sub-menu">
+	<li id="menu-item-1205" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1205"><a href="../../../../2020/11/26/my-symbol-define/index.html">Symbol အကြောင်း</a></li>
+	<li id="menu-item-1206" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1206"><a href="../../../../2020/11/26/my-symbol-feature/index.html">Symbol Feature</a></li>
+</ul>
+</li>
+<li id="menu-item-1211" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1211"><a href="../../../my-regular-expression/index.html">Regular Expression</a>
+<ul class="sub-menu">
+	<li id="menu-item-1253" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1253"><a href="../../../../2020/11/27/my-ruby-create-regex/index.html">Regular Expression အကြောင်း</a></li>
+	<li id="menu-item-1252" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1252"><a href="../../../../2020/11/30/my-regex-method/index.html">Regular Expression Methods</a></li>
+	<li id="menu-item-1251" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1251"><a href="../../../../2020/11/30/my-case-regex/index.html">Case and Regular Expression</a></li>
+</ul>
+</li>
+<li id="menu-item-1254" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1254"><a href="../../../my-class/index.html">Class</a>
+<ul class="sub-menu">
+	<li id="menu-item-1367" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1367"><a href="../../../../2020/11/30/my-class/index.html">Defining Class</a></li>
+	<li id="menu-item-1366" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1366"><a href="../../../../2020/12/01/my-class-variable/index.html">Class Variable</a></li>
+	<li id="menu-item-1497" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1497"><a href="../../../../2020/12/02/my-accessor-method/index.html">Accessor Method</a></li>
+	<li id="menu-item-1496" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1496"><a href="../../../../2020/12/04/my-class-method/index.html">Class Method</a></li>
+	<li id="menu-item-1522" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1522"><a href="../../../../2020/12/05/my-public-level-of-class-method/index.html">Public Level of Class Method</a></li>
+	<li id="menu-item-1538" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1538"><a href="../../../../2020/12/06/my-self-keyword/index.html">Self Keyword</a></li>
+	<li id="menu-item-1394" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1394"><a href="../../../../2020/12/07/my-inheritance-in-class/index.html">Inheritance in Class</a></li>
+	<li id="menu-item-1561" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1561"><a href="../../../../2020/12/08/my-super/index.html">Super</a></li>
+	<li id="menu-item-1498" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1498"><a href="../../../../2020/12/09/my-objects-instances-receivers/index.html">Objects, Instances, Receivers</a></li>
+	<li id="menu-item-1560" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1560"><a href="../../../../2020/12/10/my-monkey-patch/index.html">Monkey Patch</a></li>
+</ul>
+</li>
+<li id="menu-item-1576" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1576"><a href="../../../my-module/index.html">Module</a>
+<ul class="sub-menu">
+	<li id="menu-item-1691" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1691"><a href="../../../../2021/01/21/my-define-module/index.html">Defining Module</a></li>
+	<li id="menu-item-1690" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1690"><a href="../../../../2021/01/21/my-module-mixing/index.html">Module Mixin</a></li>
+	<li id="menu-item-1601" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1601"><a href="../../../../2021/01/21/my-enumerable-module/index.html">Enumerable Module</a></li>
+	<li id="menu-item-1600" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1600"><a href="../../../../2021/01/21/my-comparable-module/index.html">Comparable Module</a></li>
+	<li id="menu-item-1687" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1687"><a href="../../../../2021/01/21/my-kernel-module/index.html">Kernel Module</a></li>
+	<li id="menu-item-1686" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1686"><a href="../../../../2021/01/21/my-namespace/index.html">Namespace</a></li>
+	<li id="menu-item-1685" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1685"><a href="../../../../2021/01/21/my-method-collect-module/index.html">Methodနဲ့Constantတွေကိုစုထားတဲ့Module</a></li>
+	<li id="menu-item-1684" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1684"><a href="../../../../2021/01/21/my-state-collect-module/index.html">Module with State</a></li>
+	<li id="menu-item-1683" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1683"><a href="../../../../2021/01/21/my-method-search/index.html">Method Search Rules</a></li>
+</ul>
+</li>
+<li id="menu-item-1692" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1692"><a href="../../../my-exception/index.html">Exception</a>
+<ul class="sub-menu">
+	<li id="menu-item-1852" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1852"><a href="../../../../2021/05/19/my-create-execption/index.html">Creating Execption</a></li>
+	<li id="menu-item-1851" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1851"><a href="../../../../2021/05/19/my-exception-class-inheritance-relationship/index.html">Exception Class and Inheritance Relationship</a></li>
+	<li id="menu-item-1850" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1850"><a href="../../../../2021/05/19/my-retry-ensure/index.html">Retry and Ensure</a></li>
+	<li id="menu-item-1849" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1849"><a href="../../../../2021/05/19/my-exception-else/index.html">Exception ရဲ့ Else</a></li>
+	<li id="menu-item-1848" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1848"><a href="../../../../2021/05/19/my-exception-return-value/index.html">Exception ရဲ့ Return Value</a></li>
+	<li id="menu-item-1847" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1847"><a href="../../../../2021/05/19/my-rescue-modifier/index.html">Rescue Modifier</a></li>
+</ul>
+</li>
+<li id="menu-item-1854" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1854"><a href="../../../my-yield-proc/index.html">Yield and Proc</a>
+<ul class="sub-menu">
+	<li id="menu-item-2076" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2076"><a href="../../../../2021/11/22/my-yield-using-method/index.html">Yield</a></li>
+	<li id="menu-item-2075" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2075"><a href="../../../../2021/11/22/my-proc-using-method/index.html">Proc</a></li>
+	<li id="menu-item-2074" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2074"><a href="../../../../2021/11/22/my-proc-lambda/index.html">Proc and Lambda</a></li>
+	<li id="menu-item-2073" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2073"><a href="../../../../2021/11/22/my-to-proc-method/index.html">&#038; နဲ့ to_proc Method</a></li>
+</ul>
+</li>
+</ul></div>			</nav><!-- .main-navigation -->
+		
+		
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			<header class="page-header">
+				<h1 class="page-title">က​ဏ္ဍ​ - Rubyရဲ့‌ အခြေခံအချက်‌တွေ</h1>			</header><!-- .page-header -->
+
+			
+<article id="post-1218" class="post-1218 post type-post status-publish format-standard hentry category-my-regular-expression category-my-ruby-basic-knowledge">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/11/30/my-regex-method/index.html" rel="bookmark">Regular Expression Methods</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p> String&nbsp;class&nbsp;မှာ&nbsp;Regular&nbsp;Expression&nbsp;အတွက်အသုံး၀င်တဲ့&nbsp;method&nbsp;တွေ&nbsp;ရှိပါတယ်. </p>
+
+
+
+<p>
+
+■scanscan&nbsp;method&nbsp;ဟာဆိုရင်&nbsp;parameter&nbsp;ပေးလိုက်တဲ့&nbsp;Regular&nbsp;Expression&nbsp;နဲ့&nbsp;match&nbsp;ဖြစ်တဲ့အပိုင်းကိုarray&nbsp;အနေနဲ့&nbsp;ပြန်ပေးမှာ&nbsp;ဖြစ်ပါတယ်.
+
+</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">'123 456 789'.scan(/\d+/)  #=&gt; [&quot;123&quot;, &quot;456&quot;, &quot;789&quot;]</pre></div>
+
+
+
+<p>
+
+■[],&nbsp;slice,&nbsp;slice![]ထဲမှာ&nbsp;Regular&nbsp;Expression&nbsp;ကိုထည့်‌ပေးလိုက်ရင်&nbsp;string&nbsp;ထဲကနေRegular&nbsp;Expressionနဲ့match&nbsp;ဖြစ်တဲ့ဟာကို&nbsp;ထုတ်ပေးမှာဖြစ်ပါတယ်.
+
+</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">text = 'post-no 123-4567'
+text[/\d{3}-\d{4}/]   #=&gt; &quot;123-4567&quot;
+
+#match ဖြစ်တာတွေက multiple ရှိရင် ပထမဆုံး match ကိုပဲ ပြန်ပေးမှာပါ
+text = '123-4567 456-7890'
+text[/\d{3}-\d{4}/]   #=&gt; &quot;123-4567&quot;</pre></div>
+
+
+
+<p> slice&nbsp;method&nbsp;ဟာ&nbsp;[]&nbsp;ရဲ့&nbsp;alias&nbsp;method&nbsp;ဖြစ်ပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">text = 'post-no 123-4567'
+text.slice(/\d{3}-\d{4}/)   #=&gt; &quot;123-4567&quot;
+
+#match ဖြစ်တာတွေက multiple ရှိရင် ပထမဆုံး match ကိုပဲ ပြန်ပေးမှာပါ
+text = '123-4567 456-7890'
+text.slice(/\d{3}-\d{4}/)  #=&gt; &quot;123-4567&quot;</pre></div>
+
+
+
+<p> slice!&nbsp;ဆိုရင်&nbsp;match&nbsp;ဖြစ်တဲ့ကောင်ကို&nbsp;ဖြတ်ထုတ်ပေးသွားမှာပါ </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">text = 'post-no 123-4567'
+text.slice!(/\d{3}-\d{4}/)   #=&gt; &quot;123-4567&quot;
+text                         #=&gt; &quot;post-no&quot;</pre></div>
+
+
+
+<p>
+
+■splitsplit&nbsp;မှာ&nbsp;Regular&nbsp;Expression&nbsp;ကိုထည့်ပေးလိုက်ရင်&nbsp;match&nbsp;ဖြစ်တဲ့&nbsp;string&nbsp;ကို&nbsp;ဖြတ်ထုတ်ပေးပြီး&nbsp;array&nbsp;ကို&nbsp;ပြန်ပေးမှာပါ.
+
+</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">text = '123,456-789'
+text.split(/,|-/)   #=&gt; [&quot;123&quot;, &quot;456&quot;, &quot;789&quot;]</pre></div>
+
+
+
+<p>
+
+■gsub、gsub!အစ&nbsp;parameter&nbsp;က&nbsp;Regular&nbsp;Expression&nbsp;နဲ့&nbsp;match&nbsp;ဖြစ်တဲ့&nbsp;string&nbsp;ကို&nbsp;ဒုတိယ&nbsp;parameter&nbsp;က&nbsp;string&nbsp;နဲ့&nbsp;ပြောင်းပေးမှာပါ
+
+</p>
+
+
+
+<p></p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">text = '123,456-789'
+text.gsub(/,|-/, ':')    #=&gt; &quot;123:456:789&quot;
+​
+ဒုတိယ parameter မှာ hash ကိုပေးပြီးတော့ conversion rule ကို ပြောင်းလို့ရပါတယ်.
+hash = {',' =&gt; ':', '-' =&gt; '/'}
+text.gsub(/,|-/, hash)   #=&gt; &quot;123:456/789&quot;</pre></div>
+
+
+
+<p>
+
+gsub!&nbsp;method&nbsp;က&nbsp;string&nbsp;ကြီးတစ်ခုလုံးကို&nbsp;override&nbsp;လုပ်ပြီး&nbsp;change&nbsp;ပေးသွားမှာပါtext&nbsp;=&nbsp;&#8216;123,456-789&#8217;text.gsub!(/,|-/,&nbsp;&#8216;:&#8217;)&nbsp;&nbsp;&nbsp;&nbsp;#=&gt;&nbsp;&#8220; 123:456:789&#8243;text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#=&gt;&nbsp;&#8220; 123:456:789&#8221; 
+
+</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">gsub! method က string ကြီးတစ်ခုလုံးကို override လုပ်ပြီး change ပေးသွားမှာပါ
+text = '123,456-789'
+text.gsub!(/,|-/, ':')    #=&gt; &quot;123:456:789&quot;
+text                      #=&gt; &quot;123:456:789&quot;</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">ရေးသား ထုတ်ဝေခဲ့ ချိန်  </span><a href="../../../../2020/11/30/my-regex-method/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">စာရေးသူ </span><a class="url fn n" href="../../../../author/wunnathaw/index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">ကဏ္ဍများ </span><a href="../../../my-regular-expression/index.html" rel="category tag">Regular Expression</a>၊ <a href="../../index.html" rel="category tag">Rubyရဲ့‌ အခြေခံအချက်‌တွေ</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1218 -->
+
+<article id="post-1209" class="post-1209 post type-post status-publish format-standard hentry category-my-regular-expression category-my-ruby-basic-knowledge">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/11/27/my-ruby-create-regex/index.html" rel="bookmark">Regular Expression အကြောင်း</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>
+
+Ruby&nbsp;မှာ&nbsp;Regular&nbsp;Expression&nbsp;ကိုသုံးမယ်ဆိုရင်&nbsp;သုံးရမယ့်&nbsp;class&nbsp;က&nbsp;Regexp&nbsp;ပါ./&nbsp;နဲ့စရေးပြီး&nbsp;Regular&nbsp;Expression&nbsp;Object&nbsp;ကို&nbsp;create&nbsp;လုပ်လို့ရပါတယ်.
+
+</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">regex = /\d{3}-\d{4}/
+regex.class     #=&gt; Regexp</pre></div>
+
+
+
+<p> Regexp.new()&nbsp;ကိုသုံးပြီးတော့&nbsp;create&nbsp;လုပ်လို့ရပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">Regexp.new(&quot;Ruby&quot;)     #=&gt; /Ruby/</pre></div>
+
+
+
+<p> %r&nbsp;ကိုသုံးပြီးတော့&nbsp;create&nbsp;လုပ်လို့ရပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">%r(/Ruby/)     #=&gt;  /\/Ruby\//</pre></div>
+
+
+
+<p>
+
+Regular&nbsp;Expression&nbsp;=~&nbsp;string&nbsp;နည်းကိုသုံးမယ်ဆိုရင်&nbsp;match&nbsp;ဖြစ်ရင်&nbsp;&nbsp;index&nbsp;ကို&nbsp;return&nbsp;ပြန်ပေးပါတယ်.match&nbsp;မဖြစ်ရင်&nbsp;nil&nbsp;ကို&nbsp;return&nbsp;ပြန်ပေးပါတယ်.
+
+</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">#match ဖြစ်ရင်  index ကို return ပြန်ပေးပါတယ်.
+'123-456' =~ /\d{3}-\d{4}/   #=&gt; 0
+
+#match မဖြစ်ရင် nil ကို return ပြန်ပေးပါတယ်
+'hello' =~ /\d{3}-\d{4}/    #=&gt; nil</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">ရေးသား ထုတ်ဝေခဲ့ ချိန်  </span><a href="../../../../2020/11/27/my-ruby-create-regex/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">စာရေးသူ </span><a class="url fn n" href="../../../../author/wunnathaw/index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">ကဏ္ဍများ </span><a href="../../../my-regular-expression/index.html" rel="category tag">Regular Expression</a>၊ <a href="../../index.html" rel="category tag">Rubyရဲ့‌ အခြေခံအချက်‌တွေ</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1209 -->
+
+<article id="post-1179" class="post-1179 post type-post status-publish format-standard hentry category-my-ruby-basic-knowledge category-my-symbol">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/11/26/my-symbol-feature/index.html" rel="bookmark">Symbol Feature</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p><br>symbol ကို  hash နဲ့အတူတူအသုံးပြုတာများပါတယ်.ပုံမှန် hash တစ်ခုက အောက်ပါအတိုင်းပါ </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">capital = { 'japan' =&gt; 'tokyo', 'myanmar' =&gt; 'naypyitaw' }</pre></div>
+
+
+
+<p> အဲ့ဒီ hash ရဲ့ key ကို symbol နဲ့ ရေးမယ်ဆို အောက်ပါအတိုင်းရေးရပါမယ်.key ရဲ့ ဘက်ဘက်မှာ : လေးကို ထည့်ပေးလိုက်ရုံပါပဲ.</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">capital = { :japan =&gt; 'tokyo', :myanmar =&gt; 'naypyitaw' }
+#data ကို ပြန်ထုတ်ကြည့်မယ်
+capital[:japan]   #=&gt;  &quot;tokyo&quot;</pre></div>
+
+
+
+<p>
+
+=&gt;&nbsp;မပါဘဲ&nbsp;ရေးချင်ရင်&nbsp;အောက်ပါအတိုင်း&nbsp;ရေးနိုင်ပါတယ်.key&nbsp;ရဲ့&nbsp;ညာဘက်မှာ&nbsp;:&nbsp;လေးကို&nbsp;ထည့်ပေးလိုက်ရမှာပါ.
+
+</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">capital = { japan: 'tokyo', myanmar: 'naypyitaw' }
+#data ကို ပြန်ထုတ်ကြည့်မယ်
+capital[:japan]   #=&gt;  &quot;tokyo&quot;</pre></div>
+
+
+
+<p> key&nbsp;ကိုရော&nbsp;value&nbsp;ကိုရော&nbsp;symbol&nbsp;နဲ့&nbsp;အောက်ပါအတိုင်း&nbsp;နည်လမ်းနှစ်ခုနဲ့&nbsp;ရေးနိုင်ပါတယ်.<br>နံပါတ်&nbsp;1&nbsp;နည်းလမ်း(=&gt;&nbsp;ပါတဲ့နည်းလမ်း)key&nbsp;နဲ့&nbsp;value&nbsp;ရဲ့&nbsp;ဘက်ဘက်မှာ&nbsp;:&nbsp;လေးကို&nbsp;ထည့်ပေးလိုက်ရုံပါပဲ. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">capital = { :japan =&gt; :tokyo, :myanmar =&gt; :naypyitaw }
+#data ကို ပြန်ထုတ်ကြည့်မယ်
+capital[:japan]   #=&gt;  :tokyo</pre></div>
+
+
+
+<p> နံပါတ်&nbsp;2&nbsp;နည်းလမ်း(=&gt;&nbsp;မပါတဲ့နည်းလမ်း) </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">capital = { japan: :tokyo, myanmar: :naypyitaw }
+#data ကို ပြန်ထုတ်ကြည့်မယ်
+capital[:japan]   #=&gt;  :tokyo</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">ရေးသား ထုတ်ဝေခဲ့ ချိန်  </span><a href="../../../../2020/11/26/my-symbol-feature/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">စာရေးသူ </span><a class="url fn n" href="../../../../author/wunnathaw/index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">ကဏ္ဍများ </span><a href="../../index.html" rel="category tag">Rubyရဲ့‌ အခြေခံအချက်‌တွေ</a>၊ <a href="../../../my-symbol/index.html" rel="category tag">Symbol</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1179 -->
+
+<article id="post-1174" class="post-1174 post type-post status-publish format-standard hentry category-my-ruby-basic-knowledge category-my-symbol">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/11/26/my-symbol-define/index.html" rel="bookmark">Symbol အကြောင်း</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>symbol လုပ်ချင်တဲ့ string ရဲ့ ဘယ်ဘက်‌ဘေးမှာ full column (:) လေးထည့်ပေးလိုက်ရင် symbol ပါပဲ. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">symbol = :name
+symbol      #=&gt; :name</pre></div>
+
+
+
+<p> ％ကိုသုံးပြီး&nbsp;symbol&nbsp;ကို&nbsp;အောက်ပါအတိုင်း&nbsp;create&nbsp;လုပ်နိုင်ပါတယ်. <br> %s&nbsp;ကို&nbsp;သုံးရမှာပါ </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">#
+%s!ruby is fun!    #=&gt;  :&quot;ruby is fun&quot;
+
+%s(ruby is fun)    #=&gt;  :&quot;ruby is fun&quot;</pre></div>
+
+
+
+<p> symbol&nbsp;array&nbsp;တစ်ခုကို&nbsp;%i&nbsp;ကိုသုံးပြီးတော့&nbsp;create&nbsp;လုပ်နိုင်ပါတယ်. <br> အဲ့ဒီအခါကျရင်&nbsp;space&nbsp;ခြားထားတဲ့အလိုက်&nbsp;တစ်ခုချင်းစီက&nbsp;symbol&nbsp;ဖြစ်သွားမှာပါ </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">%i(japan myanmar korea)    #=&gt;   [:japan, :myanmar, :korea]</pre></div>
+
+
+
+<p> %i&nbsp;မှာဆိုရင်&nbsp;လိုင်းတစ်ကြောင်းဆင်းတာတွေ&nbsp;interpolation&nbsp;တွေက&nbsp;ဒီအတိုင်းပဲ&nbsp;ပြမှာပါ. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">name = 'Alice'
+%i(hello\ngood-bye #{name.upcase})   #=&gt;  [:&quot;hello\\ngood-bye&quot;, :&quot;\#{name.upcase}&quot;]</pre></div>
+
+
+
+<p> %I&nbsp;ကိုသုံးမှ&nbsp;လိုင်းတစ်‌ကြောင်းဆင်းတာတွေ&nbsp;interpolation&nbsp;တွေလုပ်လို့ရပြီး&nbsp;symbol&nbsp;အဖြစ်&nbsp;ပြောင်းပေးမှာပါ </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">name = 'Alice'
+%I(hello\ngood-bye #{name.upcase})   #=&gt; [:&quot;hello\ngood-bye&quot;, :ALICE]</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">ရေးသား ထုတ်ဝေခဲ့ ချိန်  </span><a href="../../../../2020/11/26/my-symbol-define/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">စာရေးသူ </span><a class="url fn n" href="../../../../author/wunnathaw/index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">ကဏ္ဍများ </span><a href="../../index.html" rel="category tag">Rubyရဲ့‌ အခြေခံအချက်‌တွေ</a>၊ <a href="../../../my-symbol/index.html" rel="category tag">Symbol</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1174 -->
+
+<article id="post-1098" class="post-1098 post type-post status-publish format-standard hentry category-my-hash category-my-ruby-basic-knowledge">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/09/28/my-hash/index.html" rel="bookmark">Hash အကြောင်း</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>■ hash&nbsp;ကို&nbsp;create&nbsp;လုပ်နည်း</p>
+
+
+
+<p>hash&nbsp;ဆိုတာက&nbsp;key&nbsp;value&nbsp;paring&nbsp;ပုံစံဖြစ်ပါတယ်.<br>hash&nbsp;ကို&nbsp;အောက်ပါအတိုင်း&nbsp;create&nbsp;လုပ်နိုင်ပါတယ်.</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">{
+    'japan' =&gt; 'yen',
+    'myanmar' =&gt; 'kyats'
+    'us' =&gt; 'dollar'
+}</pre></div>
+
+
+
+<p> hash&nbsp;တစ်ခုမှာ&nbsp;တူညီတဲ့&nbsp;key&nbsp;တွေ&nbsp;အများကြီးရှိရင်တော့&nbsp;နောက်ဆုံး&nbsp;key&nbsp;ကိုပဲ&nbsp;အလုပ်လုပ်မှာပါ. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">{
+    'japan' =&gt; 'yen',
+    'japan' =&gt; '円'
+}
+#=&gt; { &quot;japan&quot; =&gt;  &quot;円&quot;}</pre></div>
+
+
+
+<p> ■ hash&nbsp;မှ&nbsp;data&nbsp;ကိုယူပုံယူနည်း</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">currencies = { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar' }
+currencies['japan']  #=&gt; &quot;yen&quot;</pre></div>
+
+
+
+<p> ■ hash&nbsp;ထဲသို့&nbsp;data&nbsp;ထည့်နည်း&nbsp;</p>
+
+
+
+<p>အောက်ပါအတိုင်း&nbsp;data&nbsp;ကို&nbsp;add&nbsp;နိုင်ပါတယ်.<br>ထည့်ချင်တဲ့&nbsp;key&nbsp;က&nbsp;hash&nbsp;ထဲမှာ&nbsp;မရှိသေးရင်&nbsp;အသစ်&nbsp;add&nbsp;ပေးပါတယ်&nbsp; </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">currencies = { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar' }
+currencies[thai] = 'bht'
+currencies      #=&gt;  { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar', 'thai' =&gt; 'baht' }</pre></div>
+
+
+
+<p> store&nbsp;method&nbsp;ကိုသုံးပြီးတော့လည်း&nbsp;add&nbsp;လို့ရပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">#hash.store(key, value)
+currencies = { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar' }
+currencies.store('thai', 'baht')
+currencies      #=&gt;  { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar', 'thai' =&gt; 'baht' }</pre></div>
+
+
+
+<p> ■ hash&nbsp;မှ&nbsp;data&nbsp;ကို&nbsp;update&nbsp;လုပ်နည်း</p>
+
+
+
+<p>ထည့်ချင်တဲ့&nbsp;key&nbsp;က&nbsp;hash&nbsp;ထဲမှာ&nbsp;ရှိနေရင်&nbsp;override  ဖြစ်ပြီးတော့&nbsp; update&nbsp;လုပ်ပေးပါတယ်&nbsp; </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">currencies = { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar' }
+currencies['japan'] = '円'
+currencies      #=&gt;  { 'japan' =&gt; '円', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar', 'thai' =&gt; 'baht' }</pre></div>
+
+
+
+<p> ■ hash&nbsp;မှ&nbsp;data&nbsp;ကို&nbsp;ဖျက်နည်း&nbsp;</p>
+
+
+
+<p> delete&nbsp;method&nbsp;ကိုသုံးပြီးတော့&nbsp;hash&nbsp;ထဲက&nbsp;data&nbsp;တွေကို&nbsp;ဖျက်နိုင်ပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">currencies = { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar' }
+currencies.delete('us')
+currencies      #=&gt;  { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats' }</pre></div>
+
+
+
+<p> ■ hash&nbsp;ရဲ့&nbsp;looping</p>
+
+
+
+<p>each&nbsp;method&nbsp;ကိုသုံးပြီး&nbsp;loop&nbsp;ပတ်မယ်ဆိုရင်&nbsp;block&nbsp;parameter&nbsp;မှာ&nbsp;key&nbsp;နဲ့&nbsp;value&nbsp;နှစ်ခုကို&nbsp;ထားပေးရပါမယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">hash = { 'apple' =&gt; '300', 'orange' =&gt; '200' }
+hash.each { |key, value|
+    puts &quot;key: #{key}, value: #{value}&quot;
+}
+
+#=&gt;     key: apple, value: 300
+#       key: orange, value: 200</pre></div>
+
+
+
+<p>တကယ်လို့&nbsp;block&nbsp;parameter&nbsp;မှာ&nbsp;key&nbsp;နဲ့&nbsp;value&nbsp;နှစ်ခုမထားဘဲ&nbsp;တစ်ခုတည်းပဲ&nbsp;ထားလိုက်မယ်ဆိုရင်တော့&nbsp;key&nbsp;value&nbsp;တွေက&nbsp;array&nbsp;အနေနဲ့&nbsp;၀င်လာမှာပါ. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">hash = { 'apple' =&gt; '300', 'orange' =&gt; '200' }
+hash.each { |fruits|
+    key = fruits[0]
+    value = fruits[1]
+    puts &quot;key: #{key}, value: #{value}&quot;
+}
+
+#=&gt;     key: apple, value: 300
+#       key: orange, value: 200</pre></div>
+
+
+
+<p> ■ hash&nbsp;မှ&nbsp;array&nbsp;သို့&nbsp;data&nbsp;conversion </p>
+
+
+
+<p> hash&nbsp;ကနေ&nbsp;array&nbsp;ကို&nbsp;to_a&nbsp;method&nbsp;နဲ့&nbsp;data&nbsp;conversion&nbsp;လုပ်နိုင်ပါတယ်. to_a&nbsp;method&nbsp;ကိုသုံးလိုက်တဲ့အခါမှာ&nbsp;key&nbsp;value&nbsp;paring&nbsp;တစ်ခုချင်းစီဟာ&nbsp;array&nbsp;တစ်ခုအနေနဲ့&nbsp;ထွက်လာမှာပါ. array&nbsp;ကြီးတစ်ခုတည်းမှာ&nbsp;key&nbsp;value&nbsp;array&nbsp;လေးတွေ&nbsp;စုထားသလိုမျိုးဖြစ်နေမှာပါ. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">hash = { 'apple' =&gt; '300', 'orange' =&gt; '200' }
+hash.to_a   #=&gt; [[&quot;apple&quot;, &quot;300&quot;], [&quot;orange&quot;, &quot;200&quot;]]</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">ရေးသား ထုတ်ဝေခဲ့ ချိန်  </span><a href="../../../../2020/09/28/my-hash/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">စာရေးသူ </span><a class="url fn n" href="../../../../author/wunnathaw/index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">ကဏ္ဍများ </span><a href="../../../my-hash/index.html" rel="category tag">Hash</a>၊ <a href="../../index.html" rel="category tag">Rubyရဲ့‌ အခြေခံအချက်‌တွေ</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1098 -->
+
+<article id="post-1060" class="post-1060 post type-post status-publish format-standard hentry category-my-array category-my-ruby-basic-knowledge">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/09/03/my-range/index.html" rel="bookmark">Range</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p><strong>■Range Object ကိုသုံးနည်း</strong></p>
+
+
+
+<p> Range ကိုသုံးနည်းက ပုံမှန်အားဖြင့် .. တို့ … တို့ကိုအသုံးပြုသွားမှာပါ.<br> ဥပမာ<br> 1..5 ဆိုရင် 1 ကနေ 5 အထိ<br> &#8216;a&#8217;..&#8217;e&#8217; ဆိုရင် ‌a ကနေ e အထိ <br> 1…5 ဆိုရင် 1 ကနေ 4 အထိ<br> &#8216;a&#8217;…&#8217;e&#8217; ဆိုရင် ‌a ကနေ d အထိ  </p>
+
+
+
+<p><strong> ■Case နဲ့ Range ကိုသုံးနည်း</strong></p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">def charge(age)
+    case age
+    #အသက် 0 နှစ်ကနေ 5 နှစ်အထိ
+    when 0..5
+        0
+    #အသက် 6 နှစ်ကနေ 12 နှစ်အထိ
+    when 6..12
+        300
+    #အသက် 13 နှစ်ကနေ 18 နှစ်အထိ
+    when 13..18
+        600
+    #အခြား
+    else
+        1000
+    end
+end</pre></div>
+
+
+
+<p> <strong> ■Array နဲ့ Range ကိုသုံးနည်း</strong> </p>
+
+
+
+<p>array ရဲ့ index နေရာမှာ index အစား range object ကိုထည့်ပေးလိုက်မယ်ဆိုရင် သတ်မှတ်ထားတဲ့ rage အတိုင်း data တွေကို ထုတ်ယူနိုင်မှာဖြစ်ပါတယ်</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3, 4, 5]
+a[1..3]    #=&gt; [2, 3, 4]</pre></div>
+
+
+
+<p> <strong> ■looping နဲ့ Range ကိုသုံးနည်း</strong> </p>
+
+
+
+<p> range&nbsp;ကို&nbsp;array&nbsp;အနေနဲ့&nbsp;ပြောင်းပြီး&nbsp;loop&nbsp;ပတ်လို့ရပါတယ် </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">numbers = (1..4).to_a
+sum = 0
+numbers.each { |n| sum += n}
+sum #=&gt; 10</pre></div>
+
+
+
+<p>အောက်ပါအတိုင်း each method နဲ့ loop ပတ်လို့ရပါတယ် </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">sum = 0
+(1..4).each{ |n| sum += n}
+sum #=&gt; 10</pre></div>
+
+
+
+<p> အောက်ပါအတိုင်း setp method နဲ့ loop ပတ်လို့ရပါတယ်  </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">numbers = []
+(1..10).step(2){ |n| numbers &lt;&lt; n}
+numbers #=&gt; [1, 3, 5, 7, 9]
+</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">ရေးသား ထုတ်ဝေခဲ့ ချိန်  </span><a href="../../../../2020/09/03/my-range/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">စာရေးသူ </span><a class="url fn n" href="../../../../author/wunnathaw/index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">ကဏ္ဍများ </span><a href="../../../my-array/index.html" rel="category tag">Array</a>၊ <a href="../../index.html" rel="category tag">Rubyရဲ့‌ အခြေခံအချက်‌တွေ</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1060 -->
+
+<article id="post-1055" class="post-1055 post type-post status-publish format-standard hentry category-my-array category-my-ruby-basic-knowledge">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/09/03/my-looping/index.html" rel="bookmark">Looping</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p><strong> ■times&nbsp;method </strong></p>
+
+
+
+<p>အကြိမ်အရေအတွက် အတိအကျနဲ့ looping ပတ်ချင်တယ်ဆိုရင် integer class ရဲ့  times method ကို သုံးနိုင်ပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">sum = 0
+#n ထဲကို 0 ကနေ 9 အထိ တန်ဖိုးတွေ ၀င်ပါမယ်
+10.times { |n|
+    sum += n
+    puts n
+}
+puts sum      #=&gt; 45</pre></div>
+
+
+
+<p><strong>  ■  upto&nbsp;method</strong></p>
+
+
+
+<p> n&nbsp;ကနေ&nbsp;m&nbsp;အထိ&nbsp;အပေါ်ကိုတစ်ဆင့်ချင်းစီ&nbsp;looping&nbsp;ပတ်ချင်ရင်တော့&nbsp; upto method ကို သုံးလို့ရပါတယ်.</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">1.upto(5) { |n| puts &quot;count: #{n}&quot;}
+#=&gt;     count: 1
+#=&gt;     count: 2
+#=&gt;     count: 3
+#=&gt;     count: 4
+#=&gt;     count: 5</pre></div>
+
+
+
+<p> <strong>  ■ downto&nbsp;method </strong> </p>
+
+
+
+<p> n&nbsp;ကနေ&nbsp;m&nbsp;အထိ&nbsp;အောက်ကိုတစ်ဆင့်ချင်းစီ&nbsp;looping&nbsp;ပတ်ချင်ရင်တော့&nbsp; downto method ကိုသုံးလို့ရပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">5.downto(1) { |n| puts &quot;count: #{n}&quot;}
+#=&gt;     count: 5
+#=&gt;     count: 4
+#=&gt;     count: 3
+#=&gt;     count: 2
+#=&gt;     count: 1</pre></div>
+
+
+
+<p><strong>■ step&nbsp;method </strong></p>
+
+
+
+<p> n&nbsp;ကနေ&nbsp;m&nbsp;အထိကို&nbsp;တစ်ကြိမ်ချင်းစီမဟုတ်ဘဲ&nbsp;x&nbsp;အကြိမ်အရေအတွက်အလိုက်&nbsp;တိုးပြီးတော့&nbsp;looping&nbsp;ပတ်ချင်ရင်&nbsp;step&nbsp;method&nbsp;ကို&nbsp;သုံးနိင်ပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">1.step(10, 2) { |n| puts &quot;count: #{n}&quot;}
+#=&gt;     count: 1
+#=&gt;     count: 3
+#=&gt;     count: 5
+#=&gt;     count: 7
+#=&gt;     count: 9</pre></div>
+
+
+
+<p><strong>■ while&nbsp;looping</strong></p>
+
+
+
+<p> ပေးလိုက်တဲ့&nbsp;statement&nbsp;က&nbsp;true&nbsp;ဖြစ်နေသရွေ့&nbsp;looping&nbsp;ကိုပတ်နေမှာ&nbsp;ဖြစ်ပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">n = 0
+while n &lt; 5
+    puts n += 1
+end
+#=&gt;     1
+#=&gt;     2
+#=&gt;     3
+#=&gt;     4
+#=&gt;     5</pre></div>
+
+
+
+<p> statement&nbsp;နောက်မှာ&nbsp;do&nbsp;ထည့်ပေးလိုက်ရင်&nbsp;တစ်ကြောင်းတည်းနဲ့&nbsp;ရေးနိုင်မှာ&nbsp;ဖြစ်ပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">n = 0
+while n &lt; 5 do puts n += 1 end
+#=&gt;     1
+#=&gt;     2
+#=&gt;     3
+#=&gt;     4
+#=&gt;     5</pre></div>
+
+
+
+<p> do&nbsp;end&nbsp;မထည့်ချင်ရင်&nbsp;while&nbsp;statement&nbsp;ကို&nbsp;နောက်ကိုပို့ရေးလိုက်ရင်ရပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">n = 0
+puts n += 1 while n &lt; 5
+#=&gt;     1
+#=&gt;     2
+#=&gt;     3
+#=&gt;     4
+#=&gt;     5</pre></div>
+
+
+
+<p> ဘယ်လိုပဲဖြစ်ဖြစ်&nbsp;ပထမဆုံးတစ်ကြိမ်ကို&nbsp;မဖြစ်မနေ&nbsp;၀င်ချင်တယ်ဆိုရင်&nbsp;begin&nbsp;end&nbsp;ကို&nbsp;တွဲသုံးလို့ရပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">n = 0
+begin
+    n = 1
+end while false
+puts n    #=&gt; 1</pre></div>
+
+
+
+<p>■<strong> until&nbsp;looping </strong></p>
+
+
+
+<p> while&nbsp;loop&nbsp;နဲ့ပြောင်းပြန်&nbsp;ကတော့&nbsp;until&nbsp;loop&nbsp;ပါ. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">num = 10
+until num == 15 do
+    puts num
+    num += 1
+end
+#=&gt;     10
+#=&gt;     11
+#=&gt;     12
+#=&gt;     13
+#=&gt;     14</pre></div>
+
+
+
+<p> ■ <strong>for looping</strong></p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">for num in 1..5 do
+  p num
+end
+
+#=&gt;     1
+#=&gt;     2
+#=&gt;     3
+#=&gt;     4
+#=&gt;     5</pre></div>
+
+
+
+<p>  ■ <strong>loop</strong></p>
+
+
+
+<p>loop ကိုသုံးမယ်ဆိုရင်တော့ break ကို ထည့်သုံးပေးရပါမယ်</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">num =0
+loop{
+  p num
+  num+=2
+  if num &gt;= 10
+    break
+  end
+}
+  
+#=&gt;     0
+#=&gt;     2
+#=&gt;     4
+#=&gt;     6
+#=&gt;     8</pre></div>
+
+
+
+<p>   ■ <strong>next</strong></p>
+
+
+
+<p>next ကိုသာသုံးမယ်ဆိုရင် loop ကို တစ်ခုကျော်ပေးမှာပါ</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">[1,2,3,4].each do |num|
+  next if num ==1
+  p num
+end
+
+#=&gt;   2
+#=&gt;   3
+#=&gt;   4</pre></div>
+
+
+
+<p><strong>    ■ redo</strong></p>
+
+
+
+<p>redo ကိုသာသုံးမယ်ဆိုရင် loop ကို နောက်တစ်ခေါက် ပြန်ပတ်ပေးမှာပါ</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">[0,1,2,3,4].each do |num|
+  num += 1
+  p num
+  redo if num == 1
+end
+
+#=&gt;   1
+#=&gt;   2
+#=&gt;   2
+#=&gt;   3
+#=&gt;   4
+#=&gt;   5</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">ရေးသား ထုတ်ဝေခဲ့ ချိန်  </span><a href="../../../../2020/09/03/my-looping/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">စာရေးသူ </span><a class="url fn n" href="../../../../author/wunnathaw/index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">ကဏ္ဍများ </span><a href="../../../my-array/index.html" rel="category tag">Array</a>၊ <a href="../../index.html" rel="category tag">Rubyရဲ့‌ အခြေခံအချက်‌တွေ</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1055 -->
+
+<article id="post-994" class="post-994 post type-post status-publish format-standard hentry category-my-array category-my-ruby-basic-knowledge">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/08/06/my-array/index.html" rel="bookmark">Array အကြောင်း</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p><strong>■ array ကို create လုပ်နည်း</strong></p>
+
+
+
+<p>Ruby မှာ array တစ်ခုဆောက်ချင်ရင် လေးထောင့်ကွင်း ([]) ကိုသုံးရပါမယ်.<br>value တွေအများကြီးထည့်ချင်ရင်တော့ ကြားထဲမှာ comma လေးတွေနဲ့ကြားခံပေးရပါမယ်</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">fruit = ['apple']
+fruits = ['apple', 'banana', 'orange']</pre></div>
+
+
+
+<p>data type မတူတာတွေကိုလည်း array တစ်ခုတည်းမှာ သိမ်းထားလို့ရပါတယ်.<br>အောက်က code မှာ string type နဲ့ number type ကို array တစ်ခုတည်းမှာ သိမ်းထားပုံကို ပြထားပါတယ်</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">mixing = ['apple', 1, 'banana', 2, 'orange', 3]</pre></div>
+
+
+
+<p>array ထဲမှာ နောက်ထပ် array တစ်ခု ထပ်ထည့်လို့ရပါတယ်.</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">net = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]</pre></div>
+
+
+
+<p><strong>■ array ထဲက data ကိုထုတ်ယူနည်း</strong></p>
+
+
+
+<p> array ထဲက data တွေကို ထုတ်ယူချင်တယ်ဆိုရင် [] နဲ့ index ကိုသုံးရမှာပါ<br> array ရဲ့ ပထမဆုံး index တန်ဖိုးက 0 ပါ</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">fruits = ['apple', 'banana', 'orange']
+# ပထမဆုံး data ကိုထုတ်ယူတာ
+fruits[0]   #=&gt; &quot;apple&quot;
+# ဒုတိယ data ကိုထုတ်ယူတာ
+fruits[1]   #=&gt; &quot;banana&quot;
+# တတိယ data ကိုထုတ်ယူတာ
+fruits[2]   #=&gt; &quot;orange&quot;</pre></div>
+
+
+
+<p>index တန်ဖိုး 2 ခုသာပေးလိုက်ရင် index ရဲ့ နေရာနဲ့ ထုတ်ယူမယ့် အရေအတွက်ကို setting ချနိုင်မှာပါ</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">array[position, Length to get]
+
+a = [1, 2, 3, 4, 5]
+a[1, 3]      #=&gt; [2, 3, 4]</pre></div>
+
+
+
+<p>value_at method ကိုသုံးမယ်ဆိုရင် လိုချင်တဲ့ data တွေရဲ့ index တွေကို အများကြီး setting ချလို့ရပါတယ်.</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3, 4, 5]
+a.values_at(0, 2, 4)   #=&gt; [1, 3, 5]</pre></div>
+
+
+
+<p>Ruby မှာ minus index ကိုသုံးလို့ရပါတယ်.<br>-1 ဆိုရင် နောက်ဆုံး data, -2 ဆိုရင် နောက်ဆုံးရဲ့ရှေ့က data, အဲ့လိုမျိုးထုတ်ပေးမှာပါ</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+
+# နောက်ဆုံးကdataတွေကိုထုတ်
+a[-1]    #=&gt; 3
+a[-2]    #=&gt; 2</pre></div>
+
+
+
+<p>array မှာ<strong> last</strong> နဲ့ <strong>first </strong>ဆိုတဲ့ method ရှိပါတယ်. last ဆိုတာကတော့ နောက်ဆုံး data ကိုထုတ်တာပေါ့. parameter မှာ 0 အထက်ကိုပေးလိုက်ရင် နောက်ဆုံးကနေ n အကြိမ်မြောက်အထိ ထုတ်ပေးမှာပါ<br>first method ကတော့ last နဲ့ပြောင်းပြန် ထိပ်ဆုံးက data ကို ထုတ်ပေးမှာပါ</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+
+# last method
+a.last     #=&gt; 3
+a.last(2)  #=&gt; [2, 3]
+
+# first method
+a.first     #=&gt; 1
+a.first(2)  #=&gt; [1, 2]</pre></div>
+
+
+
+<p><strong>■Array ထဲကို dataထည့်နည်း</strong></p>
+
+
+
+<p>push() Method နဲ့ array ထဲကို data ထည့်လို့ရပါတယ်.</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+a.push(4)    #=&gt; [1, 2, 3, 4]</pre></div>
+
+
+
+<p>နောက်တစ်နည်းအနေနဲ့ array index ကို သုံးပြီးတော့ data ထည့်လို့ရပါတယ်.</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+a[3] = 4	#=&gt; [1, 2, 3, 4]</pre></div>
+
+
+
+<p>နောက်တစ်နည်းအနေနဲ့ [&lt;&lt;] ကိုသုံးပြီးတော့ array နောက်ဆုံးအခန်းကနေ data ထပ်ပေါင်းထည့်လို့ရပါတယ်.</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+a &lt;&lt; 4     #=&gt; [1, 2, 3, 4]</pre></div>
+
+
+
+<p><strong>■Array ထဲက data ကို ဖျက်နည်း</strong></p>
+
+
+
+<p>array ထဲက data ကိုဖျက်ချင်ရင် delete() Method ကိုသုံးလို့ရပါတယ်.</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+a.delete(1)     #=&gt; [2, 3]</pre></div>
+
+
+
+<p>index အလိုက်ဖျက်ချင်ရင်တော့ delete_at() Method ကိုသုံးနိုင်ပါတယ်.</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+a.delete_at(1)   #=&gt; [1, 3]
+
+#မရှိတဲ့ index ပေးပြီး delete လုပ်ရင် nil ကို return ပြန်
+a = [1, 2, 3]
+a.delete_at(5)     #=&gt; nil</pre></div>
+
+
+
+<p>■<strong>array နဲ့ block သုံးပုံသုံးနည်း</strong></p>
+
+
+
+<p>each&nbsp;method&nbsp;ကိုသာသုံးမယ်ဆိုရင်&nbsp;array&nbsp;ရဲ့&nbsp;index&nbsp;တွေကို&nbsp;သိနိုင်မှာမဟုတ်ပါဘူး.ဒါပေမယ့်&nbsp;each_with_index&nbsp;ကိုသုံးမယ်ဆိုရင်တော့&nbsp;index&nbsp;ကိုသိနိုင်မှာဖြစ်ပါတယ်.<br></p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">countries = ['japan', 'myanmar', 'america']
+countries.each_with_index { |country, index| puts &quot;#{index}:  #{country}&quot; }
+#=&gt; 0: japan
+#   1: myanmar
+#   2: america</pre></div>
+
+
+
+<p> အလားတူပုံစံမျိုးကို&nbsp;map&nbsp;method&nbsp;နဲ့တခြား&nbsp;method&nbsp;တွေမှာ&nbsp;သုံးမယ်ဆိုရင်တော့ with_index ကိုသုံးနိုင်ပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">countries = ['japan', 'myanmar', 'america']
+countries.map.with_index { |country, index| &quot;#{index}:  #{country}&quot; }
+#=&gt; [&quot;0:  japan&quot;, &quot;1:  myanmar&quot;, &quot;2:  america&quot;]
+
+countries.delete_if.with_index{ |country, index| country.include?('y') &amp;&amp; index.odd? }
+#=&gt; [&quot;japan&quot;, &quot;america&quot;]</pre></div>
+
+
+
+<p> with_index&nbsp;ဟာ&nbsp;ဘာဖြစ်လို့&nbsp;map method, each&nbsp;method, delete_if&nbsp;method တွေကနေ ခေါ်သုံးလို့ရနေရလဲဆိုတော့ with_index&nbsp;ဟာ&nbsp;Enumerator&nbsp;class ရဲ့ instance&nbsp;method&nbsp;တစ်ခုဖြစ်ပါတယ်. map&nbsp;method,&nbsp;each&nbsp;method, delete_if&nbsp;method တွေမှာ&nbsp;{}&nbsp;ကိုဖြုတ်ပြီး&nbsp;method&nbsp;call&nbsp;လုပ်မယ်ဆို&nbsp;Enumerator object ကို&nbsp;ပြန်ပေးမှာဖြစ်ပါတယ်.အဲ့ဒါကြောင့်မို့လို့&nbsp;ခုနက&nbsp;looping&nbsp;တွေကနေ with_index ကို ခေါ်သုံးလို့ရနေတာဖြစ်ပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">countries.map       #=&gt; #&lt;Enumerator: [&quot;japan&quot;, &quot;myanmar&quot;, &quot;america&quot;]:map&gt;
+countries.each      #=&gt; #&lt;Enumerator: [&quot;japan&quot;, &quot;myanmar&quot;, &quot;america&quot;]:each&gt;
+countries.delete_if #=&gt; #&lt;Enumerator: [&quot;japan&quot;, &quot;myanmar&quot;, &quot;america&quot;]:delete_if&gt;</pre></div>
+
+
+
+<p> 2&nbsp;dimensional&nbsp;array&nbsp;အတွက်ဆိုရင်တော့&nbsp;နည်းနည်းကွာပါလိမ့်မယ်. array&nbsp;ကို&nbsp;block&nbsp;parameter&nbsp;အနေနဲ့ပေးလိုက်ရင်&nbsp;အောက်ပါအတိုင်း&nbsp;row&nbsp;col&nbsp;အနေနဲ့&nbsp; ပြန်ထုတ်ရပါလိမ့်မယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">dimensions = [
+    [10, 20],
+    [30, 40],
+    [50, 60],
+]
+
+dimensions.each do |dimension| 
+    length = dimension[0]
+    width = dimension[1]
+    puts &quot;length: #{length}, width: #{width}&quot;
+end
+#=&gt;     length: 10, width: 20
+#=&gt;     length: 30, width: 40
+#=&gt;     length: 50, width: 60</pre></div>
+
+
+
+<p>တကယ်လို့သာ&nbsp;block&nbsp;ရဲ့&nbsp;parameter&nbsp;မှာ&nbsp;parameter&nbsp;2&nbsp;ခုသာပေးလိုက်ရင် row&nbsp;col&nbsp; အနေနဲ့&nbsp; ချက်ချင်းတန်းသုံးလို့ရမှာဖြစ်ပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">dimensions.each do |length, width|
+    puts &quot;length: #{length}, width: #{width}&quot;
+end
+#=&gt;     length: 10, width: 20
+#=&gt;     length: 30, width: 40
+#=&gt;     length: 50, width: 60</pre></div>
+
+
+
+<p>2&nbsp;dimensional&nbsp;array&nbsp;မှာ&nbsp;index&nbsp;value&nbsp;ကို&nbsp;သိချင်တယ်ဆိုရင်&nbsp;block&nbsp;parameter မှာ parameter&nbsp;2&nbsp;ခု&nbsp;ပေးရမှာဖြစ်ပါတယ်.ရှေ့&nbsp;parameter&nbsp;မှာ&nbsp;array&nbsp;၀င်လာပြီး နောက်&nbsp;parameter မှာက&nbsp;index&nbsp;တန်ဖိုး&nbsp;၀င်လာမှာ&nbsp;ဖြစ်ပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">dimensions = [
+    [10, 20],
+    [30, 40],
+    [50, 60],
+]
+
+dimensions.each_with_index do |dimension, i| 
+    length = dimension[0]
+    width = dimension[1]
+    puts &quot;length: #{length}, width: #{width}, index: #{i}&quot;
+end
+#=&gt;     length: 10, width: 20, index: 0
+#=&gt;     length: 30, width: 40, index: 1
+#=&gt;     length: 50, width: 60, index: 2</pre></div>
+
+
+
+<p> နောက်တစ်နည်း&nbsp;အနေနဲ့&nbsp;block&nbsp;parameter&nbsp;variable&nbsp;ကို&nbsp;သုံးချင်တယ်ဆိုရင်တော့ variable&nbsp;တွေကို&nbsp;()&nbsp;ကွင်းခတ်ပေးရမှာဖြစ်ပါတယ်. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">dimensions = [
+    [10, 20],
+    [30, 40],
+    [50, 60],
+]
+
+dimensions.each_with_index do |(length, width), i|
+    puts &quot;length: #{length}, width: #{width}, index: #{i}&quot;
+end
+#=&gt;     length: 10, width: 20, index: 0
+#=&gt;     length: 30, width: 40, index: 1
+#=&gt;     length: 50, width: 60, index: 2</pre></div>
+
+
+
+<p> block&nbsp;အတွင်းထဲက&nbsp;variable&nbsp;က&nbsp;အပြင်မှာ&nbsp;သုံးလို့မရပါဘူး. </p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">sum = 0
+numbers = [10, 20]
+numbers.each do |num; sum|
+    sum = 1
+    sum += num
+    puts &quot;In Block: #{sum}&quot;
+end
+puts &quot;Outer Block: #{sum}&quot;
+
+#=&gt;     In Block: 11
+#=&gt;     In Block: 21
+#=&gt;     Outer Block: 0</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">ရေးသား ထုတ်ဝေခဲ့ ချိန်  </span><a href="../../../../2020/08/06/my-array/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">စာရေးသူ </span><a class="url fn n" href="../../../../author/wunnathaw/index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">ကဏ္ဍများ </span><a href="../../../my-array/index.html" rel="category tag">Array</a>၊ <a href="../../index.html" rel="category tag">Rubyရဲ့‌ အခြေခံအချက်‌တွေ</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-994 -->
+
+<article id="post-962" class="post-962 post type-post status-publish format-standard hentry category-my-method category-my-ruby-basic-knowledge">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/08/06/my-method-eql/index.html" rel="bookmark">ညီမညီစစ်တဲ့ Method များ</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>Ruby မှာ ညီမညီစစ်ချင်ရင် သုံးလို့ရတဲ့ method နှစ်ခု <strong>equal?</strong> နဲ့ <strong>eql?</strong> ဆိုပြီး 2 ခုရှိပါတယ်</p>
+
+
+
+<p> ■<strong>equal?</strong> </p>
+
+
+
+<p> <strong>equal?</strong> methodကို instance တူလား မတူဘူးလားစစ်တဲ့နေရာမှာသုံးပါတယ်</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = 'abc'
+b = 'abc'
+a.equal?(b)         #=&gt; false
+
+c = a
+a.equal?(c)         #=&gt; true</pre></div>
+
+
+
+<p>■<strong>eql?</strong></p>
+
+
+
+<p><strong>eql? </strong>method ကို string ထဲက data က တူလားလို့စစ်တဲ့နေရာမှာသုံးပါတယ်.<br>hash မှာဆိုရင် key တူလားမတူလားဆိုတာကို စစ်တဲ့နေရာမှာသုံးပါတယ်</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}"># string ထဲက data က တူလားလို့စစ်
+a = 'abc'
+b = 'abc'
+a.eql?(b)        #=&gt; true
+
+# hash မှာဆိုရင် key တူလားမတူလားဆိုတာကို စစ်
+h = { 1 =&gt; 'Integer', 1.0 =&gt; 'Float' }
+h[1]    #=&gt;  &quot;Integer&quot;
+h[1.0]  #=&gt;  &quot;Float&quot;
+
+# key မတူပါဘူး
+1.eql?(1.0)  #=&gt; false</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">ရေးသား ထုတ်ဝေခဲ့ ချိန်  </span><a href="../../../../2020/08/06/my-method-eql/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">စာရေးသူ </span><a class="url fn n" href="../../../../author/wunnathaw/index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">ကဏ္ဍများ </span><a href="../../my-method/index.html" rel="category tag">Method</a>၊ <a href="../../index.html" rel="category tag">Rubyရဲ့‌ အခြေခံအချက်‌တွေ</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-962 -->
+
+<article id="post-958" class="post-958 post type-post status-publish format-standard hentry category-my-method category-my-ruby-basic-knowledge">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/08/06/my-method-end-in/index.html" rel="bookmark">Method Name ရဲ့ Question Mark​(?) နဲ့ Exclamation Mark(!)</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p><strong>■question mark​(?)</strong></p>
+
+
+
+<p>(?) နဲ့ဆုံးတဲ့ method တွေဟာဆိုရင် true or false တစ်ခုခု return ပြန်မယ်ဆိုတဲ့ method တွေဖြစ်ပါတယ်</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}"># empty သာဆိုရင် true, အဲ့လိုမဟုတ်ဘူးဆိုရင် false
+''.empty?        #=&gt; true
+'abcd'.empty?    #=&gt; false
+
+# object က nil ဆိုရင် true, အဲ့လိုမဟုတ်ဘူးဆိုရင် false
+@foo.nil?     #=&gt; true
+@foo = 'foo'
+@foo.nil?     #=&gt; false
+
+# မကိန်းလား
+1.odd?    #=&gt; true
+
+# စုံကိန်းလား
+2.even?     #=&gt; true</pre></div>
+
+
+
+<p><strong>■exclamation mark(!)</strong></p>
+
+
+
+<p> (!)နဲ့ဆုံးတဲ့ method တွေဟာဆိုရင် destructive method ကိုကိုယ်စားပြုပါတယ်<br> method ကိုခေါ်လိုက်တဲ့ object ကို effect ဖြစ်စေမယ်ဆိုတာမျိုးပါ</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">array = [3, 1, 5, 2, 4]
+
+a = array.sort
+puts a       #=&gt; [1, 2, 3, 4, 5]
+puts array   #=&gt; [3, 1, 5, 2, 4]
+
+b = array.sort!
+puts b      #=&gt; [1, 2, 3, 4, 5]
+puts array  #=&gt; [1, 2, 3, 4, 5]</pre></div>
+
+
+
+<p></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">ရေးသား ထုတ်ဝေခဲ့ ချိန်  </span><a href="../../../../2020/08/06/my-method-end-in/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">စာရေးသူ </span><a class="url fn n" href="../../../../author/wunnathaw/index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">ကဏ္ဍများ </span><a href="../../my-method/index.html" rel="category tag">Method</a>၊ <a href="../../index.html" rel="category tag">Rubyရဲ့‌ အခြေခံအချက်‌တွေ</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-958 -->
+
+	<nav class="navigation pagination" role="navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">စာမူလမ်းကြောင်းပြ</h2>
+		<div class="nav-links"><a class="prev page-numbers" href="../3/index.html">ေရှ့စာမျက်နှာ</a>
+<a class="page-numbers" href="../../index.html"><span class="meta-nav screen-reader-text">စာမျက်နှာ </span>1</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class="page-numbers" href="../3/index.html"><span class="meta-nav screen-reader-text">စာမျက်နှာ </span>3</a>
+<span aria-current="page" class="page-numbers current"><span class="meta-nav screen-reader-text">စာမျက်နှာ </span>4</span>
+<a class="page-numbers" href="../5/index.html"><span class="meta-nav screen-reader-text">စာမျက်နှာ </span>5</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class="page-numbers" href="../7/index.html"><span class="meta-nav screen-reader-text">စာမျက်နှာ </span>7</a>
+<a class="next page-numbers" href="../5/index.html">ေနာက်စာမျက်နှာ</a></div>
+	</nav>
+		</main><!-- .site-main -->
+	</section><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+									<a href="../../../../../../mya.wordpress.org/index.html" class="imprint">
+				WordPress မှ ကူညီထောက်ပံ့ပေးထားသည်။			</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+	<script>
+		footer = document.getElementsByTagName("footer");
+		for (i = 0; i < footer.length; ++i){
+		   footer[i].style.display = "none";
+		}
+	</script>
+	
+<link rel='stylesheet' id='whp1683tw-bs4.css-css'  href='../../../../../../wp-content/plugins/wp-security-hardening/modules/inc/assets/css/tw-bs4.css' type='text/css' media='all' />
+<link rel='stylesheet' id='whp6185font-awesome.min.css-css'  href='../../../../../../wp-content/plugins/wp-security-hardening/modules/inc/fa/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='whp7906front.css-css'  href='../../../../../../wp-content/plugins/wp-security-hardening/modules/css/front.css' type='text/css' media='all' />
+<script type='text/javascript' src='../../../../../../wp-content/plugins/wp-codemirror-block/vendor/codemirror/lib/codemirror.min.js'></script>
+<script type='text/javascript'>
+var wpcm = {"plugin_url":"http://ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com/wp-content/plugins/wp-codemirror-block","assets":[],"panelOptions":{"showPanel":true,"languageLabel":"language","runButton":true,"fullScreenButton":true,"copyButton":true},"view":"public"}
+</script>
+<script type='text/javascript' src='../../../../../../wp-content/plugins/wp-codemirror-block/assets/js/autoLoadAssets.min.js'></script>
+<script type='text/javascript' src='../../../../../../wp-content/plugins/wp-codemirror-block/assets/js/init.min.js'></script>
+<script type='text/javascript' src='../../../../../../wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">\u1019\u102e\u1014\u1030\u1038\u1001\u103d\u1032\u1021\u102c\u1038 \u1016\u103c\u1014\u1037\u103a\u1011\u102f\u1010\u103a\u1015\u102b<\/span>","collapse":"<span class=\"screen-reader-text\">\u1019\u102e\u1014\u1030\u1038\u1001\u103d\u1032\u1021\u102c\u1038 \u1001\u103b\u102f\u1036\u1037\u1015\u102b<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../../../../wp-content/themes/twentyfifteen/js/functions.js'></script>
+<script type='text/javascript' src='../../../../../../wp-includes/js/wp-embed.min.js'></script>
+
+</body>
+</html>

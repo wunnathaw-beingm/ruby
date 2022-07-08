@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com	TRUE	/	FALSE	1999999999	pll_language	my
+

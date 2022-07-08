@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="../../../../../xmlrpc.html">
+	<!--[if lt IE 9]>
+	<script src="http://ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]-->
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>admin &#8211; ページ 4 &#8211; Ruby最速入門‌</title>
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Ruby最速入門‌ &raquo; フィード" href="../../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Ruby最速入門‌ &raquo; コメントフィード" href="../../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Ruby最速入門‌ &raquo; admin による投稿のフィード" href="../../feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../../../../../wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='../../../../../wp-includes/css/dist/block-library/theme.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='codemirror-css'  href='../../../../../wp-content/plugins/wp-codemirror-block/vendor/codemirror/lib/codemirror.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='codemirror-blocks--css'  href='../../../../../wp-content/plugins/wp-codemirror-block/assets/blocks/blocks.style.build.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='../../../../../wp-content/themes/twentyfifteen/genericons/genericons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css'  href='../../../../../wp-content/themes/twentyfifteen/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-block-style-css'  href='../../../../../wp-content/themes/twentyfifteen/css/blocks.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='http://ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com/wp-content/themes/twentyfifteen/css/ie.css' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='http://ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com/wp-content/themes/twentyfifteen/css/ie7.css' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='../../../../../wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='../../../../../wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var whp_local_data = {"add_url":"http:\/\/ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com\/wp-admin\/post-new.php?post_type=event","ajaxurl":"http:\/\/ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../../../wp-content/plugins/wp-security-hardening/modules/js/front.js'></script>
+<link rel='https://api.w.org/' href='../../../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../../xmlrpc0db0.html?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../../wp-includes/wlwmanifest.xml" /> 
+
+<style>/* CSS added by WP Meta and Date Remover*/.entry-meta {display:none !important;}
+	.home .entry-meta { display: none; }
+	.entry-footer {display:none !important;}
+	.home .entry-footer { display: none; }</style></head>
+
+<body class="archive paged author author-admin author-1 wp-embed-responsive paged-4 author-paged-4">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">コンテンツへスキップ</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+										<p class="site-title"><a href="../../../../../index-2.html" rel="home">Ruby最速入門‌</a></p>
+										<button class="secondary-toggle">﻿メニューとウィジェット</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+			<div id="secondary" class="secondary">
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+				<div class="menu-%e7%9b%ae%e6%ac%a1-container"><ul id="menu-%e7%9b%ae%e6%ac%a1" class="nav-menu"><li id="menu-item-114-ja" class="lang-item lang-item-2 lang-item-ja current-lang lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-114-ja"><a href="../../index.html" hreflang="ja" lang="ja"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAE2SURBVHjaYvz69SsDEvj37x+ERGbAwZ9//wACiAUoysXFBST///8P0QOm//+HU0jgxYsXAAHEAlP0H8HYt+//4SP/f//6b2b238sLrpqRkRFoCUAAsaCrXrv2/8KF///8+f/r9//Dh/8/ffI/OQWiAeJCgABigrseJPT27f/Vq////v3/1y8oWrzk/+PHcEv+/PkDEEBMEM/B3fj/40eo0t9g8suX/w8f/odZAVQMEEAsQAzj/2cQFf3PxARWCrYEaBXQLCkpqB/+/wcqBgggJrjxQPX/hYX/+/v///kLqhpIBgf/l5ODhxiQBAggFriToDoTEv5zcf3ftQuk2s7uf0wM3MdAAPQDQAAxvn37lo+PDy4KZUDcycj4/z9CBojv3r0LEEAgG969eweLSBDEBSCWAAQYACaTbJ/kuok9AAAAAElFTkSuQmCC" title="日本語" alt="日本語" width="16" height="11" /><span style="margin-left:0.3em;">日本語</span></a></li>
+<li id="menu-item-114-my" class="lang-item lang-item-5 lang-item-my no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-114-my"><a href="../../../../my/index.html" hreflang="my-MM" lang="my-MM"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAHwAAAB8B1b+odAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADuSURBVCiRpZKxSsNgFIW/xFAKgUhE0jlDEunUxUIm8TVcXF07dRH+N0hXn8A3yOLmJnTp0qEJbZbiUCo0EnFJfx0KhfInzZALdzn33MM93KPJKX+0KL3NcrOAeXvoM2W8/V7VDr3eAwDpdlkv8LxzT5csn+AyAGDYewTg4ysHYJEvSL+TE75iIStW+JaHGAjsjo3dsREDgW95ZMVKuUARKGVJNI+I1/ERi9cx0TyilKVqYfxqVHoL+y67LAENwr1LHc+4m6mP0J1ruu8zfiYvAJijJ+4/HeRmq3C1zU2oBulCh71sxqjLQQWxEgP+AbHjRVlKrWgfAAAAAElFTkSuQmCC" title="မြန်မာဘာသာ" alt="မြန်မာဘာသာ" width="16" height="11" /><span style="margin-left:0.3em;">မြန်မာဘာသာ</span></a></li>
+<li id="menu-item-119" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-119"><a>　　　　　　目次</a></li>
+<li id="menu-item-261" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-261"><a href="../../../../category/ruby-basic-knowledge/index.html">Rubyに関する基礎知識</a>
+<ul class="sub-menu">
+	<li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-260"><a href="../../../../2020/07/07/introduction-2/index.html">イントロダクション</a></li>
+	<li id="menu-item-2213" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2213"><a href="../../../../category/ruby-basic-knowledge/variable/index.html">変数</a>
+	<ul class="sub-menu">
+		<li id="menu-item-285" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-285"><a href="../../../../2020/07/08/local-variable/index.html">ローカル変数</a></li>
+		<li id="menu-item-357" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-357"><a href="../../../../2020/07/08/constant-variable/index.html">定数</a></li>
+		<li id="menu-item-380" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-380"><a href="../../../../2020/07/08/global-variable/index.html">グローバル変数</a></li>
+		<li id="menu-item-398" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-398"><a href="../../../../2020/07/08/block-variable/index.html">ブロック変数</a></li>
+	</ul>
+</li>
+	<li id="menu-item-769" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-769"><a href="../../../../category/ruby-basic-knowledge/string/index.html">文字列</a>
+	<ul class="sub-menu">
+		<li id="menu-item-489" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-489"><a href="../../../../2020/07/09/string-definition/index.html">文字列の定義</a></li>
+		<li id="menu-item-490" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-490"><a href="../../../../2020/07/09/string-format/index.html">フォーマットを指定して文字列を作成する</a></li>
+		<li id="menu-item-491" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-491"><a href="../../../../2020/07/09/string-single-dobule-qoute/index.html">シングルクォート「&#8221;」とダブルクォート「&#8221;&#8221;」の違い</a></li>
+		<li id="menu-item-2228" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2228"><a href="../../../../2020/07/10/string-interpolation/index.html">式展開の使い方</a></li>
+		<li id="menu-item-2229" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2229"><a href="../../../../2020/07/10/string-compare/index.html">文字列の比較</a></li>
+		<li id="menu-item-571" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-571"><a href="../../../../2020/07/13/heredoc/index.html">ヒアドキュメント</a></li>
+		<li id="menu-item-589" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-589"><a href="../../../../2020/07/27/change-to-string/index.html">他のオブジェクトから文字列に変換する方法</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2220" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2220"><a href="../../../../category/ruby-basic-knowledge/number/index.html">数値</a>
+	<ul class="sub-menu">
+		<li id="menu-item-696" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-696"><a href="../../../../2020/07/27/num-operator/index.html">数値と演算子</a></li>
+		<li id="menu-item-751" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-751"><a href="../../../../2020/07/28/numdiv-checkpoint/index.html">数値同士割り算時の注意点</a></li>
+		<li id="menu-item-767" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-767"><a href="../../../../2020/07/28/change-to-num/index.html">他のオブジェクトから数値に変換する方法</a></li>
+	</ul>
+</li>
+	<li id="menu-item-781" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-781"><a href="../../../../category/ruby-basic-knowledge/conditional-branch/index.html">真偽値と条件分岐</a>
+	<ul class="sub-menu">
+		<li id="menu-item-782" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-782"><a href="../../../../2020/07/28/boolean/index.html">Rubyにおける真偽値</a></li>
+		<li id="menu-item-783" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-783"><a href="../../../../2020/07/28/if-statement/index.html">if文の使い方</a></li>
+		<li id="menu-item-816" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-816"><a href="../../../../2020/07/30/unless/index.html">unless文の使い方</a></li>
+		<li id="menu-item-815" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-815"><a href="../../../../2020/07/30/case/index.html">case文の使い方</a></li>
+		<li id="menu-item-814" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-814"><a href="../../../../2020/07/30/ternary-operator/index.html">三項演算子の使い方</a></li>
+	</ul>
+</li>
+	<li id="menu-item-859" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-859"><a href="../../../../category/ruby-basic-knowledge/method/index.html">メソッド</a>
+	<ul class="sub-menu">
+		<li id="menu-item-860" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-860"><a href="../../../../2020/08/03/method/index.html">メソッドの定義と呼び出す方法</a></li>
+		<li id="menu-item-908" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-908"><a href="../../../../2020/08/06/method-end-in/index.html">メソッド名の疑問符「?」と感嘆符「！」</a></li>
+		<li id="menu-item-916" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-916"><a href="../../../../2020/08/06/method-eql/index.html">等値を判断するメソッド</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-990" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-990"><a href="../../../../category/array/index.html">配列</a>
+<ul class="sub-menu">
+	<li id="menu-item-993" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-993"><a href="../../../../2020/08/06/array/index.html">配列のさまざまな操作</a></li>
+	<li id="menu-item-1065" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1065"><a href="../../../../2020/09/03/looping/index.html">繰り返し処理</a></li>
+	<li id="menu-item-1064" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1064"><a href="../../../../2020/09/03/range/index.html">範囲(Range)</a></li>
+</ul>
+</li>
+<li id="menu-item-1110" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1110"><a href="../../../../category/hash/index.html">ハッシュ</a>
+<ul class="sub-menu">
+	<li id="menu-item-1125" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1125"><a href="../../../../2020/09/30/hash/index.html">ハッシュのさまざまな操作</a></li>
+</ul>
+</li>
+<li id="menu-item-1181" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1181"><a href="../../../../category/symbol/index.html">シンボル</a>
+<ul class="sub-menu">
+	<li id="menu-item-1228" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1228"><a href="../../../../2020/11/27/symbol-define/index.html">シンボルの定義</a></li>
+	<li id="menu-item-1231" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1231"><a href="../../../../2020/11/27/symbol-feature/index.html">シンボルの特徴</a></li>
+</ul>
+</li>
+<li id="menu-item-1245" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1245"><a href="../../../../category/regular-expression/index.html">正規表現</a>
+<ul class="sub-menu">
+	<li id="menu-item-1243" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1243"><a href="../../../../2020/11/27/ruby-create-regex/index.html">正規表現オブジェクトの生成</a></li>
+	<li id="menu-item-1242" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1242"><a href="../../../../2020/11/27/regex-method/index.html">正規表現を使うメソッド</a></li>
+	<li id="menu-item-1241" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1241"><a href="../../../../2020/11/27/case-regex/index.html">case分と正規表現</a></li>
+</ul>
+</li>
+<li id="menu-item-1256" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1256"><a href="../../../../category/class/index.html">クラス</a>
+<ul class="sub-menu">
+	<li id="menu-item-1320" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1320"><a href="../../../../2020/11/30/class/index.html">クラスの定義</a></li>
+	<li id="menu-item-1445" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1445"><a href="../../../../2020/11/30/class-variable/index.html">クラスの変数について</a></li>
+	<li id="menu-item-1319" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1319"><a href="../../../../2020/11/30/accessor-method/index.html">アクセサメソッド</a></li>
+	<li id="menu-item-1468" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1468"><a href="../../../../2020/11/30/class-method/index.html">クラスメソッド</a></li>
+	<li id="menu-item-1344" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1344"><a href="../../../../2020/11/30/public-level-of-class-method/index.html">クラスメソッドの公開レベル</a></li>
+	<li id="menu-item-1375" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1375"><a href="../../../../2020/11/30/self-keyword/index.html">selfキーワードの使い方</a></li>
+	<li id="menu-item-1527" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1527"><a href="../../../../2020/11/30/inheritance-in-class/index.html">クラスを継承する方法</a></li>
+	<li id="menu-item-1392" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1392"><a href="../../../../2020/11/30/super/index.html">superの使い方</a></li>
+	<li id="menu-item-1532" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1532"><a href="../../../../2020/11/30/objects-instances-receivers/index.html">オブジェクト、インスタンス、レシーバー</a></li>
+	<li id="menu-item-1410" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1410"><a href="../../../../2020/11/30/monkey-patch/index.html">モンキーパッチについて</a></li>
+</ul>
+</li>
+<li id="menu-item-1570" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1570"><a href="../../../../category/module/index.html">モジュール</a>
+<ul class="sub-menu">
+	<li id="menu-item-1569" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1569"><a href="../../../../2020/12/09/define-module/index.html">モジュールの定義</a></li>
+	<li id="menu-item-1645" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1645"><a href="../../../../2021/01/20/module-mixing/index.html">モジュールのミックスイン</a></li>
+	<li id="menu-item-1783" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1783"><a href="../../../../2021/01/20/enumerable-module/index.html">Enumerableモジュール</a></li>
+	<li id="menu-item-1778" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1778"><a href="../../../../2021/01/21/comparable-module/index.html">Comparableモジュール</a></li>
+	<li id="menu-item-1777" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1777"><a href="../../../../2021/03/18/kernel-module/index.html">Kernelモジュール</a></li>
+	<li id="menu-item-1776" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1776"><a href="../../../../2021/03/18/namespace/index.html">名前空間の作成</a></li>
+	<li id="menu-item-1775" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1775"><a href="../../../../2021/03/18/method-collect-module/index.html">関数や定数をまとめるモジュール</a></li>
+	<li id="menu-item-1774" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1774"><a href="../../../../2021/03/18/state-collect-module/index.html">状態を保持するモジュールの作成</a></li>
+	<li id="menu-item-1644" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1644"><a href="../../../../2021/04/21/method-search/index.html">メソッド探索のルール</a></li>
+</ul>
+</li>
+<li id="menu-item-1936" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1936"><a href="../../../../category/exception/index.html">例外処理</a>
+<ul class="sub-menu">
+	<li id="menu-item-1941" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1941"><a href="../../../../2021/06/02/create-execption/index.html">例外処理を作成する方法</a></li>
+	<li id="menu-item-1940" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1940"><a href="../../../../2021/07/27/exception-class-inheritance-relationship/index.html">例外処理クラスの継承関係</a></li>
+	<li id="menu-item-1939" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1939"><a href="../../../../2021/07/27/retry-ensure/index.html">retryやensureの使い方</a></li>
+	<li id="menu-item-1938" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1938"><a href="../../../../2021/07/27/exception-else/index.html">例外処理のelse節</a></li>
+	<li id="menu-item-1937" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1937"><a href="../../../../2021/07/28/exception-return-value/index.html">例外処理の戻り値</a></li>
+	<li id="menu-item-1942" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1942"><a href="../../../../2021/08/03/rescue-modifier/index.html">rescue修飾子</a></li>
+</ul>
+</li>
+<li id="menu-item-2059" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2059"><a href="../../../../category/yield-proc/index.html">yieldとProc</a>
+<ul class="sub-menu">
+	<li id="menu-item-2063" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2063"><a href="../../../../2021/08/04/yield-using-method/index.html">yieldの使い方</a></li>
+	<li id="menu-item-2062" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2062"><a href="../../../../2021/08/30/proc-using-method/index.html">Procの使い方</a></li>
+	<li id="menu-item-2061" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2061"><a href="../../../../2021/08/31/proc-lambda/index.html">Procとラムダ</a></li>
+	<li id="menu-item-2060" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2060"><a href="../../../../2021/09/24/to-proc-method/index.html">&#038;とto_procメソッド</a></li>
+</ul>
+</li>
+</ul></div>			</nav><!-- .main-navigation -->
+		
+		
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			<header class="page-header">
+				<h1 class="page-title">投稿者: <span class="vcard">admin</span></h1>			</header><!-- .page-header -->
+
+			
+<article id="post-1214" class="post-1214 post type-post status-publish format-standard hentry category-ruby-basic-knowledge category-regular-expression">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/11/27/regex-method/index.html" rel="bookmark">正規表現を使うメソッド</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>Stringクラスには正規表現と組み合わせと便利に使えるメソッドが用意されています。</p>
+
+
+
+<p>■<strong>scan</strong><br>scanメソッドは引数で渡した正規表現にマッチする部分を配列に入れて返します。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">'123 456 789'.scan(/\d+/)  #=&gt; [&quot;123&quot;, &quot;456&quot;, &quot;789&quot;]</pre></div>
+
+
+
+<p>■[], slice, slice!<br>[]に正規表現を渡すと、文字列から正規表現にマッチした部分を抜き出します。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">text = 'post-no 123-4567'
+text[/\d{3}-\d{4}/]   #=&gt; &quot;123-4567&quot;
+
+#マッチする部分が複数ある場合、最初にマッチした文字列が返ります。
+text = '123-4567 456-7890'
+text[/\d{3}-\d{4}/]   #=&gt; &quot;123-4567&quot;</pre></div>
+
+
+
+<p>sliceメソッドは[]のエイリアスメソッドです。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">text = 'post-no 123-4567'
+text.slice(/\d{3}-\d{4}/)   #=&gt; &quot;123-4567&quot;
+
+#マッチする部分が複数ある場合、最初にマッチした文字列が返ります。
+text = '123-4567 456-7890'
+text.slice(/\d{3}-\d{4}/)  #=&gt; &quot;123-4567&quot;</pre></div>
+
+
+
+<p>slice!にするとマッチした部分が文字列から破壊的に取り除かれます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">text = 'post-no 123-4567'
+text.slice!(/\d{3}-\d{4}/)   #=&gt; &quot;123-4567&quot;
+text     					 #=&gt; &quot;post-no&quot;</pre></div>
+
+
+
+<p>■split<br>splitに正規表現を渡すと、マッチした文字列を区切り文字にして文字列を分解し、配列として返します。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">text = '123,456-789'
+text.split(/,|-/)   #=&gt; [&quot;123&quot;, &quot;456&quot;, &quot;789&quot;]</pre></div>
+
+
+
+<p>■gsub、gsub!<br>第1引数の正規表現にマッチした文字列を第2引数の文字列で置き換えます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">text = '123,456-789'
+text.gsub(/,|-/, ':')    #=&gt; &quot;123:456:789&quot;
+
+#第2引数にハッシュを渡して、変換のルールを指定することもできます。
+hash = {',' =&gt; ':', '-' =&gt; '/'}
+text.gsub(/,|-/, hash)   #=&gt; &quot;123:456/789&quot;</pre></div>
+
+
+
+<p>gsub!メソッドは文字列の内容を破壊的に置き換します。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">text = '123,456-789'
+text.gsub!(/,|-/, ':')    #=&gt; &quot;123:456:789&quot;
+text                      #=&gt; &quot;123:456:789&quot;</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="../../../../2020/11/27/regex-method/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">作成者 </span><a class="url fn n" href="../../index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="../../../../category/ruby-basic-knowledge/index.html" rel="category tag">Rubyに関する基礎知識</a>, <a href="../../../../category/regular-expression/index.html" rel="category tag">正規表現</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1214 -->
+
+<article id="post-1207" class="post-1207 post type-post status-publish format-standard hentry category-ruby-basic-knowledge category-regular-expression">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/11/27/ruby-create-regex/index.html" rel="bookmark">正規表現オブジェクトの生成</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>Rubyにおける正規表現オブジェクトは次のようにスラッシュでパターンを囲んで作成します。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">regex = /\d{3}-\d{4}/
+regex.class     #=&gt; Regexp</pre></div>
+
+
+
+<p>Regexp.new()を使って正規表現オブジェクトを作成できます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">Regexp.new(&quot;Ruby&quot;)     #=&gt; /Ruby/</pre></div>
+
+
+
+<p>もう一つの方法は%rを使って作成することです。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">%r(/Ruby/)     #=&gt;  /\/Ruby\//</pre></div>
+
+
+
+<p>正規表現と文字列を比較する場合は =~ を使って比較できます。マッチした場合は文字列中のマッチした位置が返り、マッチしなかった場合はnilが返ります。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;fileName&quot;:&quot;Ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">#マッチした場合はマッチした文字列の開始位置が返る
+'123-456' =~ /\d{3}-\d{4}/   #=&gt; 0
+
+#マッチしない場合nilが返る
+'hello' =~ /\d{3}-\d{4}/    #=&gt; nil</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="../../../../2020/11/27/ruby-create-regex/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">作成者 </span><a class="url fn n" href="../../index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="../../../../category/ruby-basic-knowledge/index.html" rel="category tag">Rubyに関する基礎知識</a>, <a href="../../../../category/regular-expression/index.html" rel="category tag">正規表現</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1207 -->
+
+<article id="post-1177" class="post-1177 post type-post status-publish format-standard hentry category-ruby-basic-knowledge category-symbol">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/11/27/symbol-feature/index.html" rel="bookmark">シンボルの特徴</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>シンボルをハッシュのキーとしてよく使われています。ハッシュのキーにシンボルを使うと、文字列よりも高速に値を取り出すことができます。<br>以下は文字列をハッシュのキーにした例です。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">capital = { 'japan' =&gt; 'tokyo', 'myanmar' =&gt; 'naypyitaw' }</pre></div>
+
+
+
+<p>シンボルをハッシュのキーにすると以下のようになります。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">capital = { :japan =&gt; 'tokyo', :myanmar =&gt; 'naypyitaw' }
+#シンボルを使って値を取り出す
+capital[:japan]   #=&gt;  &quot;tokyo&quot;</pre></div>
+
+
+
+<p>シンボルがキーになる場合、=&gt; を使わずに”<strong>シンボル：値</strong>”と言う記法でハッシュを作成できます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">capital = { japan: 'tokyo', myanmar: 'naypyitaw' }
+#シンボルを使って値を取り出す
+capital[:japan]   #=&gt;  &quot;tokyo&quot;</pre></div>
+
+
+
+<p>キーも値もシンボルの場合は次のようになります。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">capital = { :japan =&gt; :tokyo, :myanmar =&gt; :naypyitaw }
+#シンボルを使って値を取り出す
+capital[:japan]   #=&gt;  :tokyo</pre></div>
+
+
+
+<p>=&gt;を使わない場合、コロン(:)同士が向き合う形でハッシュを作成できます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">capital = { japan: :tokyo, myanmar: :naypyitaw }
+#シンボルを使って値を取り出す
+capital[:japan]   #=&gt;  :tokyo</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="../../../../2020/11/27/symbol-feature/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">作成者 </span><a class="url fn n" href="../../index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="../../../../category/ruby-basic-knowledge/index.html" rel="category tag">Rubyに関する基礎知識</a>, <a href="../../../../category/symbol/index.html" rel="category tag">シンボル</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1177 -->
+
+<article id="post-1171" class="post-1171 post type-post status-publish format-standard hentry category-ruby-basic-knowledge category-symbol">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/11/27/symbol-define/index.html" rel="bookmark">シンボルの定義</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>シンボルの定義方法は(:)に続けて任意の名前を付けます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">symbol = :name
+symbol      #=&gt; :name</pre></div>
+
+
+
+<p>%記法を使ってシンボルを作成することができます。%sを使って以下のように作成できます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">#!を区切り文字に使う
+%s!ruby is fun!    #=&gt;  :&quot;ruby is fun&quot;
+
+%s(ruby is fun)    #=&gt;  :&quot;ruby is fun&quot;</pre></div>
+
+
+
+<p>%iを利用してシンボルの配列を作成できます。空白文字が要素の区切りになります。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">%i(japan myanmar korea)    #=&gt;   [:japan, :myanmar, :korea]</pre></div>
+
+
+
+<p>%iでは改行文字や式展開の構文が、そのままシンボルになります。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">name = 'Alice'
+%i(hello\ngood-bye #{name.upcase})   #=&gt;  [:&quot;hello\\ngood-bye&quot;, :&quot;\#{name.upcase}&quot;]</pre></div>
+
+
+
+<p>%Iを利用すると改行文字や展開が有効になり、シンボルが作成できます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">name = 'Alice'
+%I(hello\ngood-bye #{name.upcase})   #=&gt; [:&quot;hello\ngood-bye&quot;, :ALICE]</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="../../../../2020/11/27/symbol-define/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">作成者 </span><a class="url fn n" href="../../index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="../../../../category/ruby-basic-knowledge/index.html" rel="category tag">Rubyに関する基礎知識</a>, <a href="../../../../category/symbol/index.html" rel="category tag">シンボル</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1171 -->
+
+<article id="post-1095" class="post-1095 post type-post status-publish format-standard hentry category-ruby-basic-knowledge category-hash">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/09/30/hash/index.html" rel="bookmark">ハッシュのさまざまな操作</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p><strong>■ハッシュを作成する方法</strong></p>
+
+
+
+<p>ハッシュとはキーと値の組み合わせでデータを管理するオブジェクトです。<br>以下はハッシュを作成する例です。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">{
+  'japan' =&gt; 'yen',
+  'myanmar' =&gt; 'kyats',
+  'us' =&gt; 'dollar'
+}</pre></div>
+
+
+
+<p>同じキーが複数使われた場合、最後に出てきた値が有効になります。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">{
+    'japan' =&gt; 'yen',
+    'japan' =&gt; '円'
+}
+#=&gt; { &quot;japan&quot; =&gt;  &quot;円&quot;}</pre></div>
+
+
+
+<p>■ハッシュのデータを取得する方法</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">currencies = { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar' }
+currencies['japan']  #=&gt; &quot;yen&quot;</pre></div>
+
+
+
+<p><strong>■ハッシュに要素を追加</strong></p>
+
+
+
+<p>以下は新しい要素を追加する例です。<br>キーが存在しない場合は、新たに追加されます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">currencies = { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar' }
+currencies['thai'] = 'baht'
+currencies   #=&gt; { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar', 'thai' =&gt; 'bhat' }</pre></div>
+
+
+
+<p>storeメソッドを利用して、指定したキーに対する新しい値を代入することができます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}"># hash.store(key, value)
+currencies = { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar' }
+currencies.store('thai', 'baht')
+currencies     #=&gt; { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar', 'thai' =&gt; 'bhat' }</pre></div>
+
+
+
+<p><strong>■ハッシュの要素の更新</strong></p>
+
+
+
+<p>ハッシュに存在するキーを指定値を代入すると値が上書きされ、更新されます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">currencies = { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar' }
+currencies['japan'] = '円'
+currencies     #=&gt; { 'japan' =&gt; '円', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar' }</pre></div>
+
+
+
+<p><strong>■ハッシュの要素の削除</strong></p>
+
+
+
+<p>deleteメソッドを利用すると指定したキーに対する要素を削除できます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">currencies = { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats', 'us' =&gt; 'dollar' }
+currencies.delete('us')
+currencies      #=&gt;  { 'japan' =&gt; 'yen', 'myanmar' =&gt; 'kyats' }</pre></div>
+
+
+
+<p>■<strong>ハッシュの繰り返し処理</strong></p>
+
+
+
+<p>eachメソッドを使って、キーと組み合わせを順に取り出すことができます。<br>ブロック引数がキーと値で2個の組み合わせになる必要があります。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">hash = { 'apple' =&gt; 300, 'orange' =&gt; 200 }
+hash.each { |key, value|
+    puts &quot;key: #{key}, value: #{value}&quot;
+}
+
+#=&gt;   key: apple, value: 300
+#     key: orange, value: 200</pre></div>
+
+
+
+<p>ブロック引数を1つにするとキーと値が配列に格納されます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">hash = { 'apple' =&gt; 300, 'orange' =&gt; 200 }
+hash.each { |fruits|
+    key = fruits[0]
+    value = fruits[1]
+    puts &quot;key: #{key}, value: #{value}&quot;
+}
+
+#=&gt;     key: apple, value: 300
+#       key: orange, value: 200</pre></div>
+
+
+
+<p>■<strong>ハッシュと配列の交換</strong></p>
+
+
+
+<p>ハッシュから配列にto_aメソッドを利用して変換することができます。to_aメソッドを使うとキーと値が１つの配列になり、さらにそれが複数並んだ配列になります。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">hash = { 'apple' =&gt; 300, 'orange' =&gt; 200 }
+hash.to_a   #=&gt; [[&quot;apple&quot;, 300], [&quot;orange&quot;, 200]]</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="../../../../2020/09/30/hash/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">作成者 </span><a class="url fn n" href="../../index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="../../../../category/ruby-basic-knowledge/index.html" rel="category tag">Rubyに関する基礎知識</a>, <a href="../../../../category/hash/index.html" rel="category tag">ハッシュ</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1095 -->
+
+<article id="post-1058" class="post-1058 post type-post status-publish format-standard hentry category-ruby-basic-knowledge category-array">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/09/03/range/index.html" rel="bookmark">範囲(Range)</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p><strong>■範囲オブジェクトの指定方法</strong></p>
+
+
+
+<p>範囲オブジェクトは次のように..また&#8230;を使って作成します。<br>具体的には次のように作成します。<br>1..5      # 1から5まで<br>&#8216;a&#8217;..&#8217;e&#8217;   #aからeまで <br>1&#8230;5　 #1から5まで<br>&#8216;a&#8217;&#8230;&#8217;e&#8217;  #aからeまで</p>
+
+
+
+<p><strong>■case文で使う</strong>範囲</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">def charge(age)
+    case age
+    #0歳から5歳
+    when 0..5
+        0
+    #6歳から12歳
+    when 6..12
+        300
+    #13歳から18歳
+    when 13..18
+        600
+    #それ以外
+    else
+        1000
+    end
+end</pre></div>
+
+
+
+<p><strong>■配列で使う範囲</strong></p>
+
+
+
+<p>配列に対して添え字の代わりに範囲オブジェクトを渡すと、指定した範囲の要素を取得することができます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3, 4, 5]
+a[1..3]    #=&gt; [2, 3, 4]</pre></div>
+
+
+
+<p><strong>■繰り返し処理で使う範囲</strong></p>
+
+
+
+<p>範囲オブジェクトを配列に変換して繰り返し処理を行うことができます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">numbers = (1..4).to_a
+sum = 0
+numbers.each { |n| sum += n}
+sum #=&gt; 10</pre></div>
+
+
+
+<p>範囲オブジェクトに対して直接eachメソッドを利用して繰り返し処理を行うこともできます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">sum = 0
+(1..4).each{ |n| sum += n}
+sum #=&gt; 10</pre></div>
+
+
+
+<p>stepメソッドを利用して値を増やす間隔を指定できます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;fileName&quot;:&quot;Ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">numbers = []
+(1..10).step(2) { |n| number &lt;&lt; n }
+numbers   #=&gt; [1, 3, 5, 7, 9]</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="../../../../2020/09/03/range/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">作成者 </span><a class="url fn n" href="../../index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="../../../../category/ruby-basic-knowledge/index.html" rel="category tag">Rubyに関する基礎知識</a>, <a href="../../../../category/array/index.html" rel="category tag">配列</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1058 -->
+
+<article id="post-1053" class="post-1053 post type-post status-publish format-standard hentry category-ruby-basic-knowledge category-array">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/09/03/looping/index.html" rel="bookmark">繰り返し処理</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p><strong>■timesメソッド</strong></p>
+
+
+
+<p>n回処理を繰り返したいと言う場合は、integerクラスのtimesメソッドを利用すると便利です。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;fileName&quot;:&quot;Ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">sum = 0
+#処理を10回繰り返す。nには0から9が入る
+10.times { |n|
+  sum += n
+  }
+ puts sum    #=&gt; 45</pre></div>
+
+
+
+<p><strong>■uptoメソッド</strong></p>
+
+
+
+<p>nからmまで数値を１つずつ増やしながら処理したい場合は、uptoメソッドを利用すると便利です。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">1.upto(5) { |n| puts &quot;count: #{n}&quot; }
+#=&gt;     count: 1
+#=&gt;     count: 2
+#=&gt;     count: 3
+#=&gt;     count: 4
+#=&gt;     count: 5</pre></div>
+
+
+
+<p><strong>■downtoメソッド</strong></p>
+
+
+
+<p>nからmまで数値を減らしていきたい場合は、downtoメソッドを利用すると便利です。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">5.downto(1) { |n| puts &quot;count: #{n}&quot; }
+#=&gt;     count: 5
+#=&gt;     count: 4
+#=&gt;     count: 3
+#=&gt;     count: 2
+#=&gt;     count: 1</pre></div>
+
+
+
+<p><strong>■stepメソッド</strong></p>
+
+
+
+<p>nからmまで数値をx個ずつ増やしていきたい場合は、stepメソッドを利用します。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">1.step(10, 2) { |n| puts &quot;count: #{n}&quot;}
+#=&gt;     count: 1
+#=&gt;     count: 3
+#=&gt;     count: 5
+#=&gt;     count: 7
+#=&gt;     count: 9</pre></div>
+
+
+
+<p><strong>■while文</strong></p>
+
+
+
+<p>while文は指定した条件が真である間、処理を繰り返します。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">n = 0
+while n &lt; 5
+    puts n += 1
+end
+#=&gt;     1
+#=&gt;     2
+#=&gt;     3
+#=&gt;     4
+#=&gt;     5</pre></div>
+
+
+
+<p>条件式の後ろにdoを入れると1行で書けます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">n = 0
+while n &lt; 5 do puts n += 1 end
+#=&gt;     1
+#=&gt;     2
+#=&gt;     3
+#=&gt;     4
+#=&gt;     5</pre></div>
+
+
+
+<p>1行で書くのであれば修飾子としてwhile文を後ろに置いた方がスッキリ書けます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">n = 0
+puts n += 1 while n &lt; 5
+#=&gt;     1
+#=&gt;     2
+#=&gt;     3
+#=&gt;     4
+#=&gt;     5</pre></div>
+
+
+
+<p>どんな条件でも最低1回は実行したい場合は、begin&#8230;endで囲んでからwhileを書きます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">n = 0
+begin
+    n = 1
+end while false
+puts n    #=&gt; 1</pre></div>
+
+
+
+<p><strong>■until文</strong></p>
+
+
+
+<p>until文はwhile文と反対で、条件が偽である間繰り返し処理を行います。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">num = 10
+until num == 15 do
+    puts num
+    num += 1
+end
+#=&gt;     10
+#=&gt;     11
+#=&gt;     12
+#=&gt;     13
+#=&gt;     14</pre></div>
+
+
+
+<p><strong>■for文</strong></p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">for num in 1..5 do
+  p num
+end
+
+#=&gt;     1
+#=&gt;     2
+#=&gt;     3
+#=&gt;     4
+#=&gt;     5</pre></div>
+
+
+
+<p><strong>■loopメソッド</strong></p>
+
+
+
+<p>loopメソッドを使うと無限ループを作ることができます。無限ループから脱出する場合はbreakを使います。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">num =0
+loop{
+  p num
+  num+=2
+  if num &gt;= 10
+    break
+  end
+}
+  
+#=&gt;     0
+#=&gt;     2
+#=&gt;     4
+#=&gt;     6
+#=&gt;     8</pre></div>
+
+
+
+<p><strong>■next</strong></p>
+
+
+
+<p>繰り返し処理を途中で中断し、次の繰り返し処理に進める場合はnextを使います。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">[1,2,3,4].each do |num|
+  next if num == 1
+  p num
+end
+
+#=&gt;   2
+#=&gt;   3
+#=&gt;   4</pre></div>
+
+
+
+<p><strong>■redo</strong></p>
+
+
+
+<p>繰り返し処理をやりなおしたい場合はredoを使います。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">[0,1,2,3,4].each do |num|
+  num += 1
+  p num
+  redo if num == 1
+end
+
+#=&gt;   1
+#=&gt;   2
+#=&gt;   2
+#=&gt;   3
+#=&gt;   4
+#=&gt;   5</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="../../../../2020/09/03/looping/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">作成者 </span><a class="url fn n" href="../../index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="../../../../category/ruby-basic-knowledge/index.html" rel="category tag">Rubyに関する基礎知識</a>, <a href="../../../../category/array/index.html" rel="category tag">配列</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-1053 -->
+
+<article id="post-924" class="post-924 post type-post status-publish format-standard hentry category-ruby-basic-knowledge category-array">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/08/06/array/index.html" rel="bookmark">配列のさまざまな操作</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>■<strong>配列を作成する方法</strong></p>
+
+
+
+<p>Rubyにおいて配列を作成する場合は、括弧（[])を使用します。値が複数ある配列は値をカンマ区切りで記述します。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;fileName&quot;:&quot;Ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">fruit = ['apple']
+fruits = ['apple', 'banana', 'orange']</pre></div>
+
+
+
+<p>異なるデータ型を格納することもできます。次は数値と文字列を混在させた配列です。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;fileName&quot;:&quot;Ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">mixing = ['apple', 1, 'banana', 2, 'orange', 3]</pre></div>
+
+
+
+<p>配列の中に配列を含めることもできます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;fileName&quot;:&quot;Ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">net = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]</pre></div>
+
+
+
+<p>■<strong>配列から要素を取得する方法</strong></p>
+
+
+
+<p>配列の各要素を取得する場合は、[]と添え字を使います。最初の要素の添え字は0です。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;fileName&quot;:&quot;Ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">fruits = ['apple', 'banana', 'orange']
+#1つ目の要素を取得する
+fruits[0]   #=&gt; &quot;apple&quot;
+#2つ目の要素を取得する
+fruits[1]   #=&gt; &quot;banana&quot;
+#3つ目の要素を取得する
+fruits[2]   #=&gt; &quot;orange&quot;</pre></div>
+
+
+
+<p>添え字を2つ使うと、添え字の位置と取得する長さを指定することができます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">配列[位置, 取得する長さ]
+
+a = [1, 2, 3, 4, 5]
+a[1, 3]      #=&gt; [2, 3, 4]</pre></div>
+
+
+
+<p>values_atメソッドを使うと、取得したい要素の添え字を複数指定できます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;fileName&quot;:&quot;Ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3, 4, 5]
+a.values_at(0, 2, 4)   #=&gt; [1, 3, 5]</pre></div>
+
+
+
+<p>Rubyでは添え字を負の値が使えます。-1は最後の要素、-2は最後から2番目の要素というように指定できます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;fileName&quot;:&quot;Ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+
+#最後の要素
+a[-1]    #=&gt; 3
+a[-2]    #=&gt; 2</pre></div>
+
+
+
+<p>配列にlastとfirstというメソッドがあります。lastは配列の最後の要素を取得できます。引数に0以上の数値を渡すと、最後のn個の要素を取得できます。firstはlastの反対で先頭の要素を取得するメソッドです。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;fileName&quot;:&quot;Ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+
+#lastメソッド
+a.last   #=&gt; 3
+a.last(2)  #=&gt; [2, 3]
+
+#firstメソッド
+a.first  #=&gt; 1
+a.first(2)  #=&gt; [1, 2]</pre></div>
+
+
+
+<p><strong>■配列に要素を追加する方法</strong></p>
+
+
+
+<p>配列に要素を追加する場合、push()メソッドが使えます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+a.push(4)    #=&gt; [1, 2, 3, 4]</pre></div>
+
+
+
+<p>また、添え字を指定して、要素を追加することもできます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+a[3] = 4	#=&gt; [1, 2, 3, 4]</pre></div>
+
+
+
+<p>また、[&lt;&lt;]記号を使用して、配列の末尾に要素を追加できます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+a &lt;&lt; 4     #=&gt; [1, 2, 3, 4]</pre></div>
+
+
+
+<p>■ <strong>配列の要素を削除する方法</strong> </p>
+
+
+
+<p>配列の要素を削除する場合、delete()メソッドが使えます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;fileName&quot;:&quot;Ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+a.delete(1)     #=&gt; [2, 3]</pre></div>
+
+
+
+<p>指定位置の要素を削除する場合、delete_at()メソッドを使えます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;fileName&quot;:&quot;Ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = [1, 2, 3]
+a.delete_at(1)   #=&gt; [1, 3]
+
+#存在しない添え字を指定するとnilが返る
+a = [1, 2, 3]
+a.delete_at(5)     #=&gt; nil</pre></div>
+
+
+
+<p> ■ <strong>配列とブロックの使い方</strong></p>
+
+
+
+<p>eachメソッドを使って繰り返し処理を行うと何番目の要素を処理しているのか、ブロック内で判別できません。each_with_indexメソッドを使うと添え字を判別できます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">countries = ['japan', 'myanmar', 'america']
+countries.each_with_index { |country, index| puts &quot;#{index}:  #{country}&quot; }
+#=&gt; 0: japan
+#   1: myanmar
+#   2: america</pre></div>
+
+
+
+<p>mapメソッドで繰り返し処理をしつつ、添え字も同時に取得したいときは<br>mapメソッドとwith_indexメソッドを組み合わせて使います。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">countries = ['japan', 'myanmar', 'america']
+countries.map.with_index { |country, index| &quot;#{index}:  #{country}&quot; }
+#=&gt; [&quot;0:  japan&quot;, &quot;1:  myanmar&quot;, &quot;2:  america&quot;]
+
+countries.delete_if.with_index{ |country, index| country.include?('y') &amp;&amp; index.odd? }
+#=&gt; [&quot;japan&quot;, &quot;america&quot;]</pre></div>
+
+
+
+<p>with_methodはEnumeratorクラスのインスタンスメソッドです。map, each, delete_ifメソッドなど繰り返し処理を行うとメソッドのブロックを省略して呼び出すと、Enumeratorオブジェクトを返します。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">countries.map       #=&gt; #&lt;Enumerator: [&quot;japan&quot;, &quot;myanmar&quot;, &quot;america&quot;]:map&gt;
+countries.each      #=&gt; #&lt;Enumerator: [&quot;japan&quot;, &quot;myanmar&quot;, &quot;america&quot;]:each&gt;
+countries.delete_if #=&gt; #&lt;Enumerator: [&quot;japan&quot;, &quot;myanmar&quot;, &quot;america&quot;]:delete_if&gt;</pre></div>
+
+
+
+<p>配列の配列に対して、eachメソッドなどで繰り返し処理を実行すると、配列がブロック引数に渡ってきます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">dimensions = [
+    [10, 20],
+    [30, 40],
+    [50, 60],
+]
+
+dimensions.each do |dimension| 
+    length = dimension[0]
+    width = dimension[1]
+    puts &quot;length: #{length}, width: #{width}&quot;
+end
+#=&gt;     length: 10, width: 20
+#=&gt;     length: 30, width: 40
+#=&gt;     length: 50, width: 60</pre></div>
+
+
+
+<p>しかし、ブロック引数の数を2個にすると、値を別々に受け取ることができます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">dimensions.each do |length, width|
+    puts &quot;length: #{length}, width: #{width}&quot;
+end
+#=&gt;     length: 10, width: 20
+#=&gt;     length: 30, width: 40
+#=&gt;     length: 50, width: 60</pre></div>
+
+
+
+<p>each_with_indexを使ってブロック引数を2個にすると、第1引数で縦と横の値を配列として取得できます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">dimensions = [
+    [10, 20],
+    [30, 40],
+    [50, 60],
+]
+
+dimensions.each_with_index do |dimension, i| 
+    length = dimension[0]
+    width = dimension[1]
+    puts &quot;length: #{length}, width: #{width}, index: #{i}&quot;
+end
+#=&gt;     length: 10, width: 20, index: 0
+#=&gt;     length: 30, width: 40, index: 1
+#=&gt;     length: 50, width: 60, index: 2</pre></div>
+
+
+
+<p>配列の要素を受け取るブロック引数を()で囲むと、配列の要素を別々の引数として受け取ることができます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">dimensions = [
+    [10, 20],
+    [30, 40],
+    [50, 60],
+]
+
+dimensions.each_with_index do |(length, width), i|
+    puts &quot;length: #{length}, width: #{width}, index: #{i}&quot;
+end
+#=&gt;     length: 10, width: 20, index: 0
+#=&gt;     length: 30, width: 40, index: 1
+#=&gt;     length: 50, width: 60, index: 2</pre></div>
+
+
+
+<p>ブロック引数を；で区切り、続けて変数を宣言すると、ブロック内でのみ有効な独立したローカル変数を宣言することができます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">sum = 0
+numbers = [10, 20]
+numbers.each do |num; sum|
+    sum = 1
+    sum += num
+    puts &quot;In Block: #{sum}&quot;
+end
+puts &quot;Outer Block: #{sum}&quot;
+
+#=&gt;     In Block: 11
+#=&gt;     In Block: 21
+#=&gt;     Outer Block: 0</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="../../../../2020/08/06/array/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">作成者 </span><a class="url fn n" href="../../index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="../../../../category/ruby-basic-knowledge/index.html" rel="category tag">Rubyに関する基礎知識</a>, <a href="../../../../category/array/index.html" rel="category tag">配列</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-924 -->
+
+<article id="post-912" class="post-912 post type-post status-publish format-standard hentry category-ruby-basic-knowledge category-method">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/08/06/method-eql/index.html" rel="bookmark">等値を判断するメソッド</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>Rubyでは等値を判断するための equal ?とeql?メソッドがあります。</p>
+
+
+
+<p>■<strong>equal?</strong></p>
+
+
+
+<p><strong>equal?</strong>メソッドは同じインスタンスかどうかを判断する場合に使います。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">a = 'abc'
+b = 'abc'
+a.equal?(b)         #=&gt; false
+
+c = a
+a.equal?(c)         #=&gt; true</pre></div>
+
+
+
+<p>■<strong>eql?</strong></p>
+
+
+
+<p><strong>eql?</strong>メソッドは文字列の内容が等しいか判断する場合に使います。ハッシュで二つのキーが等しいかどうかを判定するのに使われます。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">#文字列内容が等しいか判定する
+a = 'abc'
+b = 'abc'
+a.eql?(b)        #=&gt; true
+
+#ハッシュの二つのキーが等しいか判定する
+h = { 1 =&gt; 'Integer', 1.0 =&gt; 'Float' }
+h[1]    #=&gt;  &quot;Integer&quot;
+h[1.0]  #=&gt;  &quot;Float&quot;
+
+#異なるキーとして扱われる
+1.eql?(1.0)  #=&gt; false</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="../../../../2020/08/06/method-eql/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">作成者 </span><a class="url fn n" href="../../index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="../../../../category/ruby-basic-knowledge/index.html" rel="category tag">Rubyに関する基礎知識</a>, <a href="../../../../category/ruby-basic-knowledge/method/index.html" rel="category tag">メソッド</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-912 -->
+
+<article id="post-901" class="post-901 post type-post status-publish format-standard hentry category-ruby-basic-knowledge category-method">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="../../../../2020/08/06/method-end-in/index.html" rel="bookmark">メソッド名の疑問符「?」と感嘆符「！」</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>■<strong>疑問符「?」</strong></p>
+
+
+
+<p>?で終わるメソッドは真偽値を返すメソッドを表します。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">#空文字であればtrue、そうでなければfalse
+''.empty?   #=&gt; true
+'abcd'.empty?    #=&gt; false
+
+#オブジェクトがnilであればtrue, そうでなければfalse
+@foo.nil?     #=&gt; true
+@foo = 'foo'
+@foo.nil?     #=&gt; false
+
+#奇数
+1.odd?    #=&gt; true
+
+#偶数
+2.even?     #=&gt; true</pre></div>
+
+
+
+<p>■<strong>感嘆符「!」</strong></p>
+
+
+
+<p>!で終わるメソッドは破壊的メソッドを表します。メソッドを呼び出したオブジェクト自身が影響を受けることです。</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;ruby&quot;,&quot;mime&quot;:&quot;text/x-ruby&quot;,&quot;theme&quot;:&quot;material&quot;,&quot;lineNumbers&quot;:true,&quot;styleActiveLine&quot;:true,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;fileName&quot;:&quot;Ruby&quot;,&quot;language&quot;:&quot;Ruby&quot;,&quot;modeName&quot;:&quot;ruby&quot;}">array = [3, 1, 5, 2, 4]
+
+a = array.sort
+puts a   #=&gt; [1, 2, 3, 4, 5]
+puts array   #=&gt; [3, 1, 5, 2, 4]
+
+b = array.sort!
+puts b   #=&gt; [1, 2, 3, 4, 5]
+puts array  #=&gt; [1, 2, 3, 4, 5]</pre></div>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="../../../../2020/08/06/method-end-in/index.html" rel="bookmark"><time class="entry-date published" datetime=""></time><time class="updated" datetime=""></time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">作成者 </span><a class="url fn n" href="../../index.html"></a></span></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="../../../../category/ruby-basic-knowledge/index.html" rel="category tag">Rubyに関する基礎知識</a>, <a href="../../../../category/ruby-basic-knowledge/method/index.html" rel="category tag">メソッド</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-901 -->
+
+	<nav class="navigation pagination" role="navigation" aria-label="投稿">
+		<h2 class="screen-reader-text">投稿ナビゲーション</h2>
+		<div class="nav-links"><a class="prev page-numbers" href="../3/index.html">前のページ</a>
+<a class="page-numbers" href="../../index.html"><span class="meta-nav screen-reader-text">ページ </span>1</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class="page-numbers" href="../3/index.html"><span class="meta-nav screen-reader-text">ページ </span>3</a>
+<span aria-current="page" class="page-numbers current"><span class="meta-nav screen-reader-text">ページ </span>4</span>
+<a class="page-numbers" href="../5/index.html"><span class="meta-nav screen-reader-text">ページ </span>5</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class="page-numbers" href="../7/index.html"><span class="meta-nav screen-reader-text">ページ </span>7</a>
+<a class="next page-numbers" href="../5/index.html">次ページ</a></div>
+	</nav>
+		</main><!-- .site-main -->
+	</section><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+									<a href="https://ja.wordpress.org/" class="imprint">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+	<script>
+		footer = document.getElementsByTagName("footer");
+		for (i = 0; i < footer.length; ++i){
+		   footer[i].style.display = "none";
+		}
+	</script>
+	
+<link rel='stylesheet' id='whp5879tw-bs4.css-css'  href='../../../../../wp-content/plugins/wp-security-hardening/modules/inc/assets/css/tw-bs4.css' type='text/css' media='all' />
+<link rel='stylesheet' id='whp4942font-awesome.min.css-css'  href='../../../../../wp-content/plugins/wp-security-hardening/modules/inc/fa/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='whp5884front.css-css'  href='../../../../../wp-content/plugins/wp-security-hardening/modules/css/front.css' type='text/css' media='all' />
+<script type='text/javascript' src='../../../../../wp-content/plugins/wp-codemirror-block/vendor/codemirror/lib/codemirror.min.js'></script>
+<script type='text/javascript'>
+var wpcm = {"plugin_url":"http://ec2-52-199-252-147.ap-northeast-1.compute.amazonaws.com/wp-content/plugins/wp-codemirror-block","assets":[],"panelOptions":{"showPanel":true,"languageLabel":"language","runButton":true,"fullScreenButton":true,"copyButton":true},"view":"public"}
+</script>
+<script type='text/javascript' src='../../../../../wp-content/plugins/wp-codemirror-block/assets/js/autoLoadAssets.min.js'></script>
+<script type='text/javascript' src='../../../../../wp-content/plugins/wp-codemirror-block/assets/js/init.min.js'></script>
+<script type='text/javascript' src='../../../../../wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">\u30b5\u30d6\u30e1\u30cb\u30e5\u30fc\u3092\u5c55\u958b<\/span>","collapse":"<span class=\"screen-reader-text\">\u30b5\u30d6\u30e1\u30cb\u30e5\u30fc\u3092\u9589\u3058\u308b<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../../../wp-content/themes/twentyfifteen/js/functions.js'></script>
+<script type='text/javascript' src='../../../../../wp-includes/js/wp-embed.min.js'></script>
+
+</body>
+</html>
